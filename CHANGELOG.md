@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/TypoCI/spellcheck-action/tree/HEAD)
 
-[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.1.0...HEAD)
+[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.2.0...HEAD)
+
+**Merged pull requests:**
+
+- Adding Badges to Readme [\#5](https://github.com/TypoCI/spellcheck-action/pull/5) ([MikeRogers0](https://github.com/MikeRogers0))
+
+## [v0.2.0](https://github.com/TypoCI/spellcheck-action/tree/v0.2.0) (2020-08-17)
+
+[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.1.0...v0.2.0)
 
 **Implemented enhancements:**
 
