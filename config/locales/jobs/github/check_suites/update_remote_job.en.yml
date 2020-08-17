@@ -1,0 +1,34 @@
+en:
+  jobs:
+    github/check_suites/update_remote_job:
+      check_run_name: 'Typo CI'
+      output_title:
+        zero: 'No typos found'
+        one: 'Found a typo'
+        other: 'Found a few typos'
+        invalid_custom_configuration: '.typo-ci.yml file is invalid'
+      output_summary_body:
+        zero: 'Perfect! No typos found in **%{output_files_count}**'
+        one: '**%{count} typo** found in **%{output_files_count}**'
+        other: '**%{count} typos** found in **%{output_files_count}**'
+      output_summary_header: |
+        <p align="center">
+          <a href="https://typoci.com/"><img src="https://typoci.com/images/typo-ci-logo.svg" alt="Typo CI Logo - It's a sword surrounded by brackets" width="96"></a>
+        </p>
+        <h1 align="center">
+          Typo CI - Spellcheck Action
+        </h1>
+      output_summary_license:
+        valid: |
+          **Thank you for purchasing a license for Typo CI, it helps support the project by enabling me to continue developing it.**
+        invalid: |
+          **If you're using Typo CI with a Private Repository, please [purchase a license key](https://gumroad.com/l/MvvBE) to help support this project**
+      output_summary_actions:
+          invalid_custom_configuration: |
+            **Action Required:** We were unable to parse your `.typo-ci.yml` file. Please review [the Typo CI documentation](%{documentation_url}), run it through a [YAML Validator](https://yamlvalidator.com/) and then try again.
+          feedback: |
+            Have a suggestion or feedback for Typo CI? Please [raise an issue in on GitHub](https://github.com/TypoCI/spellcheck-action).
+      output_files_count:
+        zero: 'No files'
+        one: '1 file'
+        other: '%{count} files'

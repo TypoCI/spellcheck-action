@@ -1,0 +1,14 @@
+{
+  "name": "typo-ci-spellcheck-action",
+  "private": true,
+  "dependencies": {
+    "dictionary-de": "^2.0.3",
+    "dictionary-en": "^3.0.1",
+    "dictionary-en-gb": "^2.2.2",
+    "dictionary-es": "^3.0.1",
+    "dictionary-fr": "^2.4.1",
+    "dictionary-it": "^1.3.2",
+    "dictionary-pt": "^2.0.0"
+  },
+  "version": "0.1.0"
+}

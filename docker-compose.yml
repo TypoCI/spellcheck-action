@@ -1,0 +1,36 @@
+---
+# Docker Compose 2.4 is for local development
+# https://www.heroku.com/podcasts/codeish/57-discussing-docker-containers-and-kubernetes-with-a-docker-captain - Source on that.
+version: '2.4'
+
+x-app: &app
+  image: typo-ci-spelling-action:latest
+  mem_limit: 512m
+  build:
+    context: .
+    dockerfile: Dockerfile
+    target: development
+  environment:
+    RAILS_LOG_TO_STDOUT: enabled
+  working_dir: /usr/src/app
+  volumes:
+    - .:/usr/src/app:cached
+    - bundler:/usr/local/bundle:delegated
+    - app_tmp:/usr/src/app/tmp:delegated
+    - node_modules:/usr/src/app/node_modules:delegated
+
+services:
+
+  web:
+    <<: *app
+    command:  sh -c "
+      bundle check || bundle install &&
+      yarn install --check-files &&
+      ./usr/src/app/entrypoint.sh
+      "
+
+volumes:
+  bundler:
+  bootsnap_cache:
+  node_modules:
+  app_tmp:

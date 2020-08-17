@@ -1,0 +1,16 @@
+en:
+  lib:
+    spellcheck/file_name:
+      message: '"%{word}" in the filename is a typo. Did you mean "%{suggestion}"?'
+      excluded_words:
+        samesies: "I don't know this word. \"%{word}\"? From context, I believe it means \"Proudly Uneducated\"."
+        recieve: "\"%{word}\" is a typo. Did you mean \"%{suggestion}\"? I remember this with the rhyme \"I before E, except after C unless it's one of 923 words spelled cie\"."
+        definate: '"%{word}" is a typo. Did you mean "%{suggestion}"? Definite is one of the most misspelt words in the English language.'
+        developper: '"%{word}" is a typo. Did you mean "%{suggestion}"? Fun fact: The German for "Developer" is "Entwickler".'
+        execpt: "\"%{word}\" is a typo. Did you mean \"%{suggestion}\"? I'm actually tested using RSpec, neat right?"
+        fundametal: "\"%{word}\" is a typo. Did you mean \"%{suggestion}\"? Misspellings of this word increase when you're listing to Metallica."
+        rhythem: '"%{word}" is a typo. Did you mean "%{suggestion}"? Rhythm Helps Your Two Hips Move.'
+        seperate: '"%{word}" is a typo. Did you mean "%{suggestion}"? Along with loose and definitely, separate is one of the most commonly misspelled words in the English language.'
+        supprise: 'Surprise! I found the typo "%{word}". Did you mean "%{suggestion}"?'
+        occure: '"%{word}" is a typo. Did you mean "%{suggestion}"? The word "occure" does not technically exist in the English lexicon.'
+        mikerogers0: "\"%{word}\" isn't a typo. @MikeRogers0 created Typo CI. I just wanted to tell you that."
