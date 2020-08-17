@@ -13,7 +13,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'Dockerfile.github'
+  image: 'Dockerfile'
 
 env:
   GITHUB_TOKEN: secrets.GITHUB_TOKEN
