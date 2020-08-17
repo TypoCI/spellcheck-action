@@ -12,7 +12,8 @@ Checks for spelling errors within commits via a GitHub Action
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/heyjoshwood?label=Follow%20Mike%20for%20updates&style=social)](https://twitter.com/MikeRogers0)
 ![RSpec](https://github.com/TypoCI/spellcheck-action/workflows/RSpec/badge.svg)
-
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/cc1820c92e584c289289d52b2e5823cc)](https://www.codacy.com/gh/TypoCI/spellcheck-action?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TypoCI/spellcheck-action&amp;utm_campaign=Badge_Grade)
+[![Maintainability](https://api.codeclimate.com/v1/badges/35bd5a25a1555784c8ce/maintainability)](https://codeclimate.com/github/TypoCI/spellcheck-action/maintainability)
 
 ## Installation
 
