@@ -11,6 +11,8 @@ Checks for spelling errors within commits via a GitHub Action
 </p>
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/heyjoshwood?label=Follow%20Mike%20for%20updates&style=social)](https://twitter.com/MikeRogers0)
+![RSpec](https://github.com/TypoCI/spellcheck-action/workflows/RSpec/badge.svg)
+
 
 ## Installation
 
