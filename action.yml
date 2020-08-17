@@ -13,6 +13,7 @@ inputs:
 
 runs:
   using: 'docker'
+  # image: 'Dockerfile'
   image: 'docker://typoci/spellcheck-action'
 
 env:

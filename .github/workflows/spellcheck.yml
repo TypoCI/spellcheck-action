@@ -14,7 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: TypoCheck
-        # uses: docker://typoci/spellcheck-action
         uses: ./
         with:
           typo_ci_license_key: ${{ secrets.TYPO_CI_LICENSE_KEY }}
