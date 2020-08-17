@@ -27,12 +27,12 @@ on:
   pull_request:
 jobs:
   spellcheck:
-    name: Typo CI
+    name: Typo CI (GitHub Action)
     runs-on: ubuntu-latest
     timeout-minutes: 4
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
     steps:
-    - name: Typo CI (GitHub Action)
+    - name: TypoCheck
       uses: typoci/spellcheck-action@master
       # with:
         # A license can be purchased via:
