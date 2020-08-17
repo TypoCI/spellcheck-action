@@ -27,14 +27,14 @@ on:
   pull_request:
 jobs:
   spellcheck:
-    name: Typo CI
+    name: Typo CI (GitHub Action)
     runs-on: ubuntu-latest
     timeout-minutes: 4
     if: "!contains(github.event.head_commit.message, '[ci skip]')"
     steps:
-    - name: Typo CI (GitHub Action)
+    - name: TypoCheck
       uses: typoci/spellcheck-action@master
-      with:
+      # with:
         # A license can be purchased via:
         # https://gumroad.com/l/MvvBE
         # typo_ci_license_key: ${{ secrets.TYPO_CI_LICENSE_KEY }}
