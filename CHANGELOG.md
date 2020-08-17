@@ -4,6 +4,10 @@
 
 [Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.1.0...HEAD)
 
+**Implemented enhancements:**
+
+- feat: Using prebuilt docker image to speed up run times [\#4](https://github.com/TypoCI/spellcheck-action/pull/4) ([MikeRogers0](https://github.com/MikeRogers0))
+
 **Fixed bugs:**
 
 - Bug: Use correct repo name for changelog [\#3](https://github.com/TypoCI/spellcheck-action/pull/3) ([MikeRogers0](https://github.com/MikeRogers0))
