@@ -1,3 +1,0 @@
-FROM typoci/spellcheck-action:latest AS builder
-
-ENTRYPOINT ["/usr/src/app/entrypoint.sh"]
