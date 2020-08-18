@@ -6,6 +6,7 @@ module TypoCi
 
     def call
       return unsupported_event_error unless supported_github_event?
+      return unsupported_event_action_error unless supported_github_event_action?
 
       # Sweet lets do the processing.
       Github::CheckSuites::RequestedJob.perform_now(github_check_suite)
@@ -28,6 +29,14 @@ module TypoCi
 
     def unsupported_event_error
       TypoCi::Logger.info("'#{ENV['GITHUB_EVENT_NAME']}' is an unsupported event. Skipping typo scan.")
+    end
+
+    def supported_github_event_action?
+      github_event.supported_action?
+    end
+
+    def unsupported_event_action_error
+      TypoCi::Logger.info("'#{ENV['GITHUB_EVENT_NAME']}' action '#{github_event.action}' is unsupported. Skipping typo scan.")
     end
   end
 end
