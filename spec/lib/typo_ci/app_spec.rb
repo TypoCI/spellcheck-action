@@ -37,6 +37,16 @@ RSpec.describe TypoCi::App do
       end
     end
 
+    context 'an PR is edited' do
+      let(:event_file_path) { Rails.root.join('spec', 'fixtures', 'files', 'github_events', 'pull_request', 'edited.json').to_s }
+
+      it do
+        expect(Github::CheckSuites::RequestedJob).to_not receive(:perform_now)
+        expect(TypoCi::Logger).to receive(:info).with("'pull_request' action 'edited' is unsupported. Skipping typo scan.")
+        subject
+      end
+    end
+
     context 'push event' do
       let(:event_file_path) { Rails.root.join('spec', 'fixtures', 'files', 'github_events', 'push.json').to_s }
       before do
