@@ -11,10 +11,12 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
   end
 
   def create_check_run_on_github!
-    @created_check_run = github_octokit_service.create_check_run(
+    @github_check_suite.check_run_id = ENV['GITHUB_RUN_ID']
+
+    # Doop a speling error
+    @created_check_run = github_octokit_service.update_check_run(
       @github_check_suite.repository_full_name,
-      check_run_name,
-      @github_check_suite.head_sha,
+      @github_check_suite.check_run_id,
       {
         conclusion: @github_check_suite.conclusion,
         status: 'completed',
@@ -29,8 +31,8 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
         actions: actions
       }
     )
-    TypoCi::Logger.info("CheckRun Added. id: #{@created_check_run.id}")
     @github_check_suite.check_run_id = @created_check_run.id
+    TypoCi::Logger.info("CheckRun Added. id: #{@created_check_run.id}")
   end
 
   def add_remaining_annotations_to_check_run_on_github!
