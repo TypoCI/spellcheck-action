@@ -26,6 +26,14 @@ class Github::OctokitService
     client.create_check_run(repo, name, head_sha, options)
   end
 
+  def check_runs_for_ref(repo, ref, options = {})
+    options.merge!(
+      accept: Octokit::Preview::PREVIEW_TYPES[:checks]
+    )
+
+    client.check_runs_for_ref(repo, ref, options)
+  end
+
   def update_check_run(repo, id, options = {})
     options.merge!(
       accept: Octokit::Preview::PREVIEW_TYPES[:checks]

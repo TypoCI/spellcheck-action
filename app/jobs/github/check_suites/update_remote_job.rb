@@ -11,7 +11,7 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
   end
 
   def create_check_run_on_github!
-    @github_check_suite.check_run_id = ENV['GITHUB_RUN_ID']
+    @github_check_suite.check_run_id = check_run_id
 
     # Doop a speling error
     @created_check_run = github_octokit_service.update_check_run(
@@ -69,6 +69,13 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
 
   def output_summary
     [output_summary_header, output_summary_license, output_summary_actions, output_summary_body].join("\n\n")
+  end
+
+  def check_run_id
+    TypoCi::Logger.info("GITHUB_WORKFLOW: #{ENV['GITHUB_WORKFLOW']}")
+    TypoCi::Logger.info("GITHUB_RUN_ID: #{ENV['GITHUB_RUN_ID']}")
+    TypoCi::Logger.info("Getting check run id")
+    raise github_octokit_service.check_runs_for_ref(@github_check_suite.repository_full_name, ENV['GITHUB_SHA']).inspect
   end
 
   private
