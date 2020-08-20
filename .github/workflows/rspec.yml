@@ -24,7 +24,7 @@ jobs:
         ruby-version: 2.7.1
         
     - name: Gem Cache
-      uses: actions/cache@v2.1.0
+      uses: actions/cache@v2.1.1
       id: gem-cache
       with:
         path: |
@@ -33,7 +33,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gems-
     - name: Node Modules Cache
-      uses: actions/cache@v2.1.0
+      uses: actions/cache@v2.1.1
       id: node-modules-cache
       with:
         path: node_modules
@@ -41,7 +41,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-yarn-
     - name: Assets Cache
-      uses: actions/cache@v2.1.0
+      uses: actions/cache@v2.1.1
       id: assets-cache
       with:
         path: |
