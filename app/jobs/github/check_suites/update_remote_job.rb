@@ -73,12 +73,10 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
 
   def check_run_id
     @check_run_id ||= begin
-                        TypoCi::Logger.info("GITHUB_WORKFLOW: #{ENV['GITHUB_WORKFLOW']}")
-                        TypoCi::Logger.info("GITHUB_RUN_ID: #{ENV['GITHUB_RUN_ID']}")
-                        TypoCi::Logger.info("Getting check run id")
-                        github_octokit_service.check_runs_for_ref(@github_check_suite.repository_full_name, @github_check_suite.head_sha, { name: "Typo CI", status: "in_progress" }).select do |check_run|
-                          check_run[:name].include?('Typo CI')
-                        end.first[:id]
+                        github_octokit_service.check_runs_for_ref(@github_check_suite.repository_full_name, @github_check_suite.head_sha, { status: "in_progress" }).select do |check_run|
+                          puts check_run.inspect
+                          check_run['name'].include?('Typo CI')
+                        end.first['id']
                       end
   end
 
