@@ -22,4 +22,4 @@ jobs:
           docker build . -t typo-ci-spelling-action:latest
       - name: Run tests
         run: |
-          docker run --rm -it --entrypoint rspec typo-ci-spelling-action:latest
+          docker run --rm --entrypoint rspec typo-ci-spelling-action:latest

@@ -24,7 +24,7 @@ services:
   web:
     <<: *app
     command:  sh -c "
-      bundle check || bundle install &&
+      (bundle check || bundle install) &&
       yarn install --check-files &&
       ./usr/src/app/entrypoint.sh
       "
