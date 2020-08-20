@@ -3,6 +3,7 @@ require 'spec_helper'
 ENV['APP_ENV'] = 'test'
 
 ENV['GITHUB_TOKEN'] = ""
+ENV['ACTIONS_RUNTIME_TOKEN'] = ""
 ENV['GITHUB_REPOSITORY'] = "Sample/TestRepo"
 ENV['GITHUB_BASE_REF'] = ""
 ENV['GITHUB_REF'] = ""
