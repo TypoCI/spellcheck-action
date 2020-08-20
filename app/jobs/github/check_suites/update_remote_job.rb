@@ -15,7 +15,7 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
     @created_check_run = github_octokit_service.create_check_run(
       @github_check_suite.repository_full_name,
       check_run_name,
-      @github_check_suite.check_run_id,
+      @github_check_suite.head_sha,
       {
         conclusion: @github_check_suite.conclusion,
         status: 'completed',
