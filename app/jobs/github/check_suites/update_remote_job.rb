@@ -123,6 +123,6 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
   end
 
   def github_octokit_service
-    @github_octokit_service ||= Github::OctokitService.new(@github_check_suite, access_token: ENV['ACTIONS_RUNTIME_TOKEN'])
+    @github_octokit_service ||= Github::OctokitService.new(@github_check_suite)
   end
 end

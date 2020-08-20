@@ -2,9 +2,9 @@ require 'octokit'
 
 # Wrapper for talking to Octokit. Normally used just to add preview headers
 class Github::OctokitService
-  def initialize(github_check_suite, access_token: nil)
+  def initialize(github_check_suite)
     @github_check_suite = github_check_suite
-    @access_token = access_token || @github_check_suite.github_token
+    @access_token = @github_check_suite.github_token
   end
 
   def client
