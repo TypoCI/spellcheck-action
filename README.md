@@ -15,6 +15,8 @@ Checks for spelling errors within commits via a GitHub Action
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/cc1820c92e584c289289d52b2e5823cc)](https://www.codacy.com/gh/TypoCI/spellcheck-action?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TypoCI/spellcheck-action&amp;utm_campaign=Badge_Grade)
 [![Maintainability](https://api.codeclimate.com/v1/badges/35bd5a25a1555784c8ce/maintainability)](https://codeclimate.com/github/TypoCI/spellcheck-action/maintainability)
 
+**Note: If you're using this GitHub Action on a private repository you must [purchase a license](https://gum.co/MvvBE) after 30 days.**
+
 ## Installation
 
 Copy add the following to `.github/workflows/spellcheck.yml`:
@@ -43,6 +45,52 @@ jobs:
         # typo_ci_license_key: ${{ secrets.TYPO_CI_LICENSE_KEY }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+```
+
+## Configuration
+
+You can tweak how Typo CI analyses your code by adding a `.typo-ci.yml` file to the root of your repository. Here is a sample file:
+
+```yml
+# This is a sample .typo-ci.yml file, it's used to configure how Typo CI will behave.
+# Add it to the root of your project and push it to github.
+---
+
+# What language dictionaries should it use? Currently Typo CI supports:
+# de
+# en
+# en_GB
+# es
+# fr
+# it
+# pt
+# pt_BR
+dictionaries:
+  - en
+  - en_GB
+
+# Any files/folders we should ignore?
+excluded_files:
+  - "vendor/**/*"
+  - "node_modules/**/*"
+  - "*.key"
+  - "*.enc"
+  - "*.min.css"
+  - "*.css.map"
+  - "*.min.js"
+  - "*.js.map"
+  - "*.mk"
+  - "package-lock.json"
+  - "yarn.lock"
+  - "Gemfile.lock"
+  - ".typo-ci.yml"
+
+# Any typos we should ignore?
+excluded_words:
+  - typoci
+
+# Would you like filenames to also be spellchecked?
+spellcheck_filenames: true
 ```
 
 ## The Prosperity Public License 3.0.0
