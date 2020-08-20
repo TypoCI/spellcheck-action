@@ -11,7 +11,7 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
   end
 
   def create_check_run_on_github!
-    TypoCi::Logger.info("GITHUB_JOB #{ENV['GITHUB_JOB']}")
+    # doop
     @created_check_run = github_octokit_service.create_check_run(
       @github_check_suite.repository_full_name,
       check_run_name,
@@ -55,7 +55,7 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
   end
 
   def check_run_name
-    ENV['GITHUB_WORKFLOW'] || I18n.t("check_run_name", scope: ['jobs', self.class.name.underscore])
+    I18n.t("check_run_name", scope: ['jobs', self.class.name.underscore])
   end
 
   def output_title
