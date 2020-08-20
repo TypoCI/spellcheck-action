@@ -4,12 +4,9 @@
 
 [Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.2.0...HEAD)
 
-**Fixed bugs:**
-
-- bug: Only run on events that have a git push involved [\#8](https://github.com/TypoCI/spellcheck-action/pull/8) ([MikeRogers0](https://github.com/MikeRogers0))
-
 **Merged pull requests:**
 
+- Adding notes on how to configure the action [\#12](https://github.com/TypoCI/spellcheck-action/pull/12) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bump actions/setup-ruby from v1 to v1.1.1 [\#7](https://github.com/TypoCI/spellcheck-action/pull/7) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Update actions/cache requirement to v2.1.0 [\#6](https://github.com/TypoCI/spellcheck-action/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Adding Badges to Readme [\#5](https://github.com/TypoCI/spellcheck-action/pull/5) ([MikeRogers0](https://github.com/MikeRogers0))
@@ -24,6 +21,7 @@
 
 **Fixed bugs:**
 
+- bug: Only run on events that have a git push involved [\#8](https://github.com/TypoCI/spellcheck-action/pull/8) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bug: Use correct repo name for changelog [\#3](https://github.com/TypoCI/spellcheck-action/pull/3) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bug: Correcting sample install code [\#1](https://github.com/TypoCI/spellcheck-action/pull/1) ([MikeRogers0](https://github.com/MikeRogers0))
 
