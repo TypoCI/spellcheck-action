@@ -76,7 +76,7 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
     TypoCi::Logger.info("GITHUB_WORKFLOW: #{ENV['GITHUB_WORKFLOW']}")
     TypoCi::Logger.info("GITHUB_RUN_ID: #{ENV['GITHUB_RUN_ID']}")
     TypoCi::Logger.info("Getting check run id")
-    raise github_octokit_service.check_runs_for_ref(@github_check_suite.repository_full_name, @github_check_suite.head_sha).inspect
+    raise github_octokit_service.check_runs_for_ref(@github_check_suite.repository_full_name, @github_check_suite.head_sha, { name: "Typo CI (GitHub Action)" }).inspect
   end
 
   private
