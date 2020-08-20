@@ -14,10 +14,9 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
     @github_check_suite.check_run_id = check_run_id
 
     # Doop a speling error
-    @created_check_run = github_octokit_service.create_check_run(
+    @created_check_run = github_octokit_service.update(
       @github_check_suite.repository_full_name,
-      check_run_name,
-      @github_check_suite.head_sha,
+      @github_check_suite.check_run_id,
       {
         conclusion: @github_check_suite.conclusion,
         status: 'completed',
@@ -73,10 +72,14 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
   end
 
   def check_run_id
-    TypoCi::Logger.info("GITHUB_WORKFLOW: #{ENV['GITHUB_WORKFLOW']}")
-    TypoCi::Logger.info("GITHUB_RUN_ID: #{ENV['GITHUB_RUN_ID']}")
-    TypoCi::Logger.info("Getting check run id")
-    raise github_octokit_service.check_runs_for_ref(@github_check_suite.repository_full_name, @github_check_suite.head_sha, { name: "Typo CI", status: "in_progress" }).inspect
+    @check_run_id ||= begin
+                        TypoCi::Logger.info("GITHUB_WORKFLOW: #{ENV['GITHUB_WORKFLOW']}")
+                        TypoCi::Logger.info("GITHUB_RUN_ID: #{ENV['GITHUB_RUN_ID']}")
+                        TypoCi::Logger.info("Getting check run id")
+                        github_octokit_service.check_runs_for_ref(@github_check_suite.repository_full_name, @github_check_suite.head_sha, { name: "Typo CI", status: "in_progress" }).select do |check_run|
+                          check_run[:name].include?('Typo CI')
+                        end.first[:id]
+                      end
   end
 
   private
