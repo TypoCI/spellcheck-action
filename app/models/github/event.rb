@@ -35,7 +35,7 @@ class Github::Event < ApplicationRecord
   end
 
   def github_token
-    ENV['ACTIONS_RUNTIME_TOKEN'] || ENV['GITHUB_TOKEN']
+    ENV['GITHUB_TOKEN']
   end
 
   def github_run_id
