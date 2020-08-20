@@ -14,7 +14,7 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
     @github_check_suite.check_run_id = check_run_id
 
     # Doop a speling error
-    @created_check_run = github_octokit_service.update(
+    @created_check_run = github_octokit_service.update_check_run(
       @github_check_suite.repository_full_name,
       @github_check_suite.check_run_id,
       {
