@@ -73,10 +73,10 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
 
   def check_run_id
     @check_run_id ||= begin
-                        github_octokit_service.check_runs_for_ref(@github_check_suite.repository_full_name, @github_check_suite.head_sha, { status: "in_progress" }).select do |check_run|
+                        github_octokit_service.check_runs_for_ref(@github_check_suite.repository_full_name, @github_check_suite.head_sha, { status: "in_progress" })[:check_runs].select do |check_run|
                           puts check_run.inspect
-                          check_run['name'].include?('Typo CI')
-                        end.first['id']
+                          check_run[:name].include?('Typo CI')
+                        end.first[:id]
                       end
   end
 
