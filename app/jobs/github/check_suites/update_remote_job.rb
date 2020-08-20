@@ -11,7 +11,7 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
   end
 
   def create_check_run_on_github!
-    # Doop a speling error
+    puts ENV.keys.inspect
     @created_check_run = github_octokit_service.create_check_run(
       @github_check_suite.repository_full_name,
       check_run_name,
