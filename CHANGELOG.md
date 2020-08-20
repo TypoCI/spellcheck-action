@@ -4,12 +4,17 @@
 
 [Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.2.0...HEAD)
 
+**Implemented enhancements:**
+
+- feat: Using prebuilt docker image to speed up run times [\#4](https://github.com/TypoCI/spellcheck-action/pull/4) ([MikeRogers0](https://github.com/MikeRogers0))
+
 **Fixed bugs:**
 
 - bug: Only run on events that have a git push involved [\#8](https://github.com/TypoCI/spellcheck-action/pull/8) ([MikeRogers0](https://github.com/MikeRogers0))
 
 **Merged pull requests:**
 
+- Running test suite from within container [\#13](https://github.com/TypoCI/spellcheck-action/pull/13) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding notes on how to configure the action [\#12](https://github.com/TypoCI/spellcheck-action/pull/12) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bump actions/cache from v2.1.0 to v2.1.1 [\#11](https://github.com/TypoCI/spellcheck-action/pull/11) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump jwt from 2.2.1 to 2.2.2 [\#10](https://github.com/TypoCI/spellcheck-action/pull/10) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -21,10 +26,6 @@
 ## [v0.2.0](https://github.com/TypoCI/spellcheck-action/tree/v0.2.0) (2020-08-17)
 
 [Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.1.0...v0.2.0)
-
-**Implemented enhancements:**
-
-- feat: Using prebuilt docker image to speed up run times [\#4](https://github.com/TypoCI/spellcheck-action/pull/4) ([MikeRogers0](https://github.com/MikeRogers0))
 
 **Fixed bugs:**
 
