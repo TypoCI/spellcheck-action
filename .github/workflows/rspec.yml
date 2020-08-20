@@ -12,55 +12,14 @@ jobs:
     name: "Test"
     runs-on: ubuntu-latest
     steps:
-    - name: Install hunspell
-      run: |
-        sudo apt-get install hunspell
-        hunspell -v
-    - uses: actions/checkout@v1
-
-    - name: Set up Ruby 2.7
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.7.1
-        
-    - name: Gem Cache
-      uses: actions/cache@v2.1.1
-      id: gem-cache
-      with:
-        path: |
-          vendor/bundle
-        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-gems-
-    - name: Node Modules Cache
-      uses: actions/cache@v2.1.1
-      id: node-modules-cache
-      with:
-        path: node_modules
-        key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-        restore-keys: |
-          ${{ runner.os }}-yarn-
-    - name: Assets Cache
-      uses: actions/cache@v2.1.1
-      id: assets-cache
-      with:
-        path: |
-          public/assets
-          public/packs-test
-        key: ${{ runner.os }}-assets-${{ steps.extract_branch.outputs.branch }}
-        restore-keys: |
-          ${{ runner.os }}-assets-
-    - name: Build and create DB
-      env:
-        APP_ENV: test
-      run: |
-        gem install bundler
-        bundle config path vendor/bundle
-        bundle install --jobs 4 --retry 3
-        yarn
-        ./bin/setup
-    - name: Run tests
-      env:
-        APP_ENV: test
-      run: |
-        bundle exec rspec
+      - uses: actions/checkout@v1
+      - name: Pull docker images
+        run: |
+          docker-compose pull
+      - uses: satackey/action-docker-layer-caching@v0.0.8
+      - name: Build the latest image
+        run: |
+          docker build . -t typo-ci-spelling-action:latest
+      - name: Run tests
+        run: |
+          docker run --rm --entrypoint rspec typo-ci-spelling-action:latest
