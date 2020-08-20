@@ -10,7 +10,7 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     ast (2.4.1)
-    codecov (0.2.5)
+    codecov (0.2.6)
       colorize
       json
       simplecov
@@ -118,7 +118,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport
-  codecov (~> 0.2.5)
+  codecov (~> 0.2.6)
   factory_bot
   faker
   ffi-hunspell
