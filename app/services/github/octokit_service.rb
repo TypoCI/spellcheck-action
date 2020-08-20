@@ -18,12 +18,12 @@ class Github::OctokitService
     client.create_status(full_name, head_sha, status, options)
   end
 
-  def create_check_run(repo, context, head_sha, options = {})
+  def create_check_run(repo, name, head_sha, options = {})
     options.merge!(
       accept: Octokit::Preview::PREVIEW_TYPES[:checks]
     )
 
-    client.create_check_run(repo, context, head_sha, options)
+    client.create_check_run(repo, name, head_sha, options)
   end
 
   def update_check_run(repo, id, options = {})

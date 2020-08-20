@@ -54,7 +54,7 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
   end
 
   def check_run_name
-    I18n.t("check_run_name", scope: ['jobs', self.class.name.underscore])
+    ENV['GITHUB_WORKFLOW'] || I18n.t("check_run_name", scope: ['jobs', self.class.name.underscore])
   end
 
   def output_title

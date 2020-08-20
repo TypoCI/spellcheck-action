@@ -43,7 +43,7 @@ class Github::CheckSuite < ApplicationRecord
   end
 
   def to_gid_param
-    github_run_id
+    github_run_id"
   end
 
   def analysable?
