@@ -11,11 +11,10 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
   end
 
   def create_check_run_on_github!
-    @github_check_suite.check_run_id = check_run_id
-
     # Doop a speling error
     @created_check_run = github_octokit_service.update_check_run(
       @github_check_suite.repository_full_name,
+      check_run_name,
       @github_check_suite.check_run_id,
       {
         conclusion: @github_check_suite.conclusion,
@@ -69,15 +68,6 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
 
   def output_summary
     [output_summary_header, output_summary_license, output_summary_actions, output_summary_body].join("\n\n")
-  end
-
-  def check_run_id
-    @check_run_id ||= begin
-                        github_octokit_service.check_runs_for_ref(@github_check_suite.repository_full_name, @github_check_suite.head_sha, { status: "in_progress" })[:check_runs].select do |check_run|
-                          puts check_run.inspect
-                          check_run[:name].include?('Typo CI')
-                        end.first[:id]
-                      end
   end
 
   private
