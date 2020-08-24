@@ -34,7 +34,7 @@ group :development do
 end
 
 group :test do
-  gem 'codecov', '~> 0.2.6', require: false
+  gem 'codecov', '~> 0.2.8', require: false
   gem 'faker'
   gem 'rspec', '~> 3.9.0'
   gem 'simplecov'
