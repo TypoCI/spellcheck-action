@@ -10,6 +10,7 @@
 
 **Merged pull requests:**
 
+- Bump sentry-raven from 3.0.2 to 3.0.4 [\#19](https://github.com/TypoCI/spellcheck-action/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Tidying up wording in readme [\#17](https://github.com/TypoCI/spellcheck-action/pull/17) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bump codecov from 0.2.6 to 0.2.8 [\#16](https://github.com/TypoCI/spellcheck-action/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump sentry-raven from 3.0.0 to 3.0.2 [\#15](https://github.com/TypoCI/spellcheck-action/pull/15) ([dependabot[bot]](https://github.com/apps/dependabot))
