@@ -3,7 +3,7 @@ name: Publish To GitHub Container Registry
 on:
   push:
     branches:
-      - master
+      #- master
 jobs:
   publish_to_github_container_registry:
     runs-on: ubuntu-latest
@@ -17,7 +17,7 @@ jobs:
     - uses: satackey/action-docker-layer-caching@v0.0.8
     - name: Build Latest Docker
       run: |
-        docker build . -t ghcr.io/typoci/spelling-action:latest
+        docker build . -t ghcr.io/typoci/spellcheck-action:latest
     - name: Login to GitHub Container Registry
       run: |
         echo ${GCR_TOKEN} | docker login "https://ghcr.io" --username "${GCR_USERNAME}" --password-stdin
@@ -26,4 +26,4 @@ jobs:
         GCR_TOKEN: ${{ secrets.GCR_TOKEN }}
     - name: Push to Registry
       run: |
-        docker push ghcr.io/typoci/spelling-action:latest
+        docker push ghcr.io/typoci/spellcheck-action:latest
