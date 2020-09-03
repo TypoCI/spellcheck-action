@@ -4,6 +4,11 @@ LABEL com.github.actions.name="Typo CI - Spellcheck Action" \
       com.github.actions.description="Check for typos & spelling mistakes, then displays suggestions." \
       com.github.actions.icon="code" \
       com.github.actions.color="green" \
+      org.opencontainers.image.authors="Mike Rogers <me@mikerogers.io>" \
+      org.opencontainers.image.url="https://github.com/TypoCI/spellcheck-action" \
+      org.opencontainers.image.documentation="https://github.com/TypoCI/spellcheck-action" \
+      org.opencontainers.image.vendor="TypoCI" \
+      org.opencontainers.image.description="Check for typos & spelling mistakes, then displays suggestions." \
       maintainer="Mike Rogers <me@mikerogers.io>"
 
 RUN apk --no-cache add build-base git hunspell tzdata libffi-dev yarn
