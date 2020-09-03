@@ -1,0 +1,29 @@
+name: Publish To GitHub Container Registry
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  publish_to_github_container_registry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+    steps:
+    - uses: actions/checkout@v2
+    - name: Pull Docker Layers
+      run: |
+        docker pull typoci/spellcheck-action:latest
+    - name: Build Latest Docker
+      run: |
+        docker build . -t ghcr.io/typoci/spellcheck-action:latest
+    - name: Login to GitHub Container Registry
+      run: |
+        echo ${GCR_TOKEN} | docker login "https://ghcr.io" --username "${GCR_USERNAME}" --password-stdin
+      env:
+        GCR_USERNAME: ${{ secrets.GCR_USERNAME }}
+        GCR_TOKEN: ${{ secrets.GCR_TOKEN }}
+    - name: Push to Registry
+      run: |
+        docker push ghcr.io/typoci/spellcheck-action:latest
+        echo "Pushed up"
