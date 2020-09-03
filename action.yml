@@ -14,7 +14,7 @@ inputs:
 runs:
   using: 'docker'
   # image: 'Dockerfile'
-  image: 'docker://typoci/spellcheck-action'
+  image: 'docker://ghcr.io/typoci/spelling-action:latest'
 
 env:
   GITHUB_TOKEN: secrets.GITHUB_TOKEN
