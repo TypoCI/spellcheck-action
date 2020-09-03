@@ -1,5 +1,10 @@
 FROM ruby:2.7.1-alpine AS builder
-LABEL maintainer="Mike Rogers <me@mikerogers.io>"
+
+LABEL com.github.actions.name="Typo CI - Spellcheck Action" \
+      com.github.actions.description="Check for typos & spelling mistakes, then displays suggestions." \
+      com.github.actions.icon="code" \
+      com.github.actions.color="green" \
+      maintainer="Mike Rogers <me@mikerogers.io>"
 
 RUN apk --no-cache add build-base git hunspell tzdata libffi-dev yarn
 
