@@ -4,6 +4,10 @@
 
 [Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.2.0...HEAD)
 
+**Implemented enhancements:**
+
+- Pushing Dockerfile to GitHub Container Registry [\#22](https://github.com/TypoCI/spellcheck-action/pull/22) ([MikeRogers0](https://github.com/MikeRogers0))
+
 **Fixed bugs:**
 
 - bug: Only run on events that have a git push involved [\#8](https://github.com/TypoCI/spellcheck-action/pull/8) ([MikeRogers0](https://github.com/MikeRogers0))
@@ -22,6 +26,7 @@
 - Bump actions/setup-ruby from v1 to v1.1.1 [\#7](https://github.com/TypoCI/spellcheck-action/pull/7) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Update actions/cache requirement to v2.1.0 [\#6](https://github.com/TypoCI/spellcheck-action/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Adding Badges to Readme [\#5](https://github.com/TypoCI/spellcheck-action/pull/5) ([MikeRogers0](https://github.com/MikeRogers0))
+- feat: Adding auto updating changelog [\#2](https://github.com/TypoCI/spellcheck-action/pull/2) ([MikeRogers0](https://github.com/MikeRogers0))
 
 ## [v0.2.0](https://github.com/TypoCI/spellcheck-action/tree/v0.2.0) (2020-08-17)
 
@@ -35,10 +40,6 @@
 
 - Bug: Use correct repo name for changelog [\#3](https://github.com/TypoCI/spellcheck-action/pull/3) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bug: Correcting sample install code [\#1](https://github.com/TypoCI/spellcheck-action/pull/1) ([MikeRogers0](https://github.com/MikeRogers0))
-
-**Merged pull requests:**
-
-- feat: Adding auto updating changelog [\#2](https://github.com/TypoCI/spellcheck-action/pull/2) ([MikeRogers0](https://github.com/MikeRogers0))
 
 ## [v0.1.0](https://github.com/TypoCI/spellcheck-action/tree/v0.1.0) (2020-08-17)
 
