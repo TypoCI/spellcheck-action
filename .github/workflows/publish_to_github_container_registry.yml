@@ -3,7 +3,7 @@ name: Publish To GitHub Container Registry
 on:
   push:
     branches:
-      #- master
+      - master
 jobs:
   publish_to_github_container_registry:
     runs-on: ubuntu-latest
