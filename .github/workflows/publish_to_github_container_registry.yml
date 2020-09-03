@@ -1,0 +1,29 @@
+name: Publish To GitHub Container Registry
+
+on:
+  push:
+    branches:
+      #- master
+jobs:
+  publish_to_github_container_registry:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+    steps:
+    - uses: actions/checkout@v2
+    - name: Pull Docker Layers
+      run: |
+        docker-compose pull
+    - uses: satackey/action-docker-layer-caching@v0.0.8
+    - name: Build Latest Docker
+      run: |
+        docker build . -t typo-ci-spelling-action:latest
+    - name: Login to GitHub Container Registry
+      run: |
+        docker login "https://ghcr.io" --username "${GCR_USERNAME}" --password "${GCR_TOKEN}
+      env:
+        GCR_USERNAME: ${{ secrets.GCR_USERNAME }}
+        GCR_TOKEN: ${{ secrets.GCR_TOKEN }}
+    - name: Push to Registry
+      run: |
+        docker push typo-ci-spelling-action:latest
