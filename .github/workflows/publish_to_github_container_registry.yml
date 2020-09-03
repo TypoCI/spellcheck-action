@@ -20,7 +20,7 @@ jobs:
         docker build . -t typo-ci-spelling-action:latest
     - name: Login to GitHub Container Registry
       run: |
-        docker login "https://ghcr.io" --username "${GCR_USERNAME}" --password "${GCR_TOKEN}
+        docker login "https://ghcr.io" --username "${GCR_USERNAME}" --password "${GCR_TOKEN}"
       env:
         GCR_USERNAME: ${{ secrets.GCR_USERNAME }}
         GCR_TOKEN: ${{ secrets.GCR_TOKEN }}
