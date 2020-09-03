@@ -14,6 +14,8 @@
 
 **Merged pull requests:**
 
+- Bump rubocop from 0.89.1 to 0.90.0 [\#21](https://github.com/TypoCI/spellcheck-action/pull/21) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump codecov from 0.2.8 to 0.2.9 [\#20](https://github.com/TypoCI/spellcheck-action/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump sentry-raven from 3.0.2 to 3.0.4 [\#19](https://github.com/TypoCI/spellcheck-action/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Tidying up wording in readme [\#17](https://github.com/TypoCI/spellcheck-action/pull/17) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bump codecov from 0.2.6 to 0.2.8 [\#16](https://github.com/TypoCI/spellcheck-action/pull/16) ([dependabot[bot]](https://github.com/apps/dependabot))
@@ -26,7 +28,6 @@
 - Bump actions/setup-ruby from v1 to v1.1.1 [\#7](https://github.com/TypoCI/spellcheck-action/pull/7) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Update actions/cache requirement to v2.1.0 [\#6](https://github.com/TypoCI/spellcheck-action/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Adding Badges to Readme [\#5](https://github.com/TypoCI/spellcheck-action/pull/5) ([MikeRogers0](https://github.com/MikeRogers0))
-- feat: Adding auto updating changelog [\#2](https://github.com/TypoCI/spellcheck-action/pull/2) ([MikeRogers0](https://github.com/MikeRogers0))
 
 ## [v0.2.0](https://github.com/TypoCI/spellcheck-action/tree/v0.2.0) (2020-08-17)
 
@@ -40,6 +41,10 @@
 
 - Bug: Use correct repo name for changelog [\#3](https://github.com/TypoCI/spellcheck-action/pull/3) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bug: Correcting sample install code [\#1](https://github.com/TypoCI/spellcheck-action/pull/1) ([MikeRogers0](https://github.com/MikeRogers0))
+
+**Merged pull requests:**
+
+- feat: Adding auto updating changelog [\#2](https://github.com/TypoCI/spellcheck-action/pull/2) ([MikeRogers0](https://github.com/MikeRogers0))
 
 ## [v0.1.0](https://github.com/TypoCI/spellcheck-action/tree/v0.1.0) (2020-08-17)
 
