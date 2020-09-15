@@ -30,7 +30,7 @@ gem 'activesupport'
 group :development do
   gem 'github_changelog_generator', '~> 1.15.0'
   gem 'i18n-debug'
-  gem 'rubocop', '~> 0.90.0'
+  gem 'rubocop', '~> 0.91.0'
 end
 
 group :test do
