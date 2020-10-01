@@ -14,6 +14,7 @@
 
 **Merged pull requests:**
 
+- Adding follow link for @MikeRogers0 [\#33](https://github.com/TypoCI/spellcheck-action/pull/33) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bump rubocop from 0.89.1 to 0.90.0 [\#21](https://github.com/TypoCI/spellcheck-action/pull/21) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump codecov from 0.2.8 to 0.2.9 [\#20](https://github.com/TypoCI/spellcheck-action/pull/20) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump sentry-raven from 3.0.2 to 3.0.4 [\#19](https://github.com/TypoCI/spellcheck-action/pull/19) ([dependabot[bot]](https://github.com/apps/dependabot))
