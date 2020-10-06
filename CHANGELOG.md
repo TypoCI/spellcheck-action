@@ -6,6 +6,7 @@
 
 **Implemented enhancements:**
 
+- Adds alternate spellings for parameterise in word list  [\#35](https://github.com/TypoCI/spellcheck-action/pull/35) ([Ollymid](https://github.com/Ollymid))
 - Pushing Dockerfile to GitHub Container Registry [\#22](https://github.com/TypoCI/spellcheck-action/pull/22) ([MikeRogers0](https://github.com/MikeRogers0))
 
 **Fixed bugs:**
