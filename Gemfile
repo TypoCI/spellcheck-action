@@ -38,6 +38,6 @@ group :test do
   gem 'faker'
   gem 'rspec', '~> 3.9.0'
   gem 'simplecov'
-  gem 'webmock', '~> 3.8'
+  gem 'webmock', '~> 3.9'
   gem 'factory_bot'
 end
