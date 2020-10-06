@@ -11,6 +11,6 @@ loader.push_dir('./app/models')
 loader.push_dir('./app/services')
 loader.setup
 
-Dir['./config/initializers/**/*'].each { |f| require f }
+Dir['./config/initializers/**/*'].sort.each { |f| require f }
 
 Spellcheck::Dictionaries.setup!

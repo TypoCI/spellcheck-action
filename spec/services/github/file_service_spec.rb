@@ -12,9 +12,9 @@ RSpec.describe Github::FileService do
       blob_url: 'https://github.com/MikeRogers0/MikeRogersIO/blob/47283dd20039d58e7cc59ba102959c1668772955/source/blog/2019-09-26-intraducing-typo-ci.html.md',
       raw_url: 'https://github.com/MikeRogers0/MikeRogersIO/raw/47283dd20039d58e7cc59ba102959c1668772955/source/blog/2019-09-26-intraducing-typo-ci.html.md',
       contents_url: 'https://api.github.com/repos/MikeRogers0/MikeRogersIO/contents/source/blog/2019-09-26-intraducing-typo-ci.html.md?ref=47283dd20039d58e7cc59ba102959c1668772955',
-      patch: "@@ -0,0 +1,18 @@\n" +
-        "+---\n" +
-        "+layout: post\n" +
+      patch: "@@ -0,0 +1,18 @@\n" \
+        "+---\n" \
+        "+layout: post\n" \
         '+ - MathedMan'
     }
   end

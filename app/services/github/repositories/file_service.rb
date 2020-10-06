@@ -1,7 +1,6 @@
 require 'mimemagic'
 class Github::Repositories::FileService
-  attr_reader :configuration
-  attr_reader :repo_file_path
+  attr_reader :configuration, :repo_file_path
 
   def initialize(file, repo_file_path, configuration:)
     @file = file

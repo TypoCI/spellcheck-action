@@ -4,11 +4,11 @@ class Github::Event::PullRequest < Github::Event
   end
 
   def action
-    data.dig(:action)
+    data[:action]
   end
 
   def pull_request_number
-    data.dig(:number)
+    data[:number]
   end
 
   def head_sha

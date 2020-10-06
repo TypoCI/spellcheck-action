@@ -2,12 +2,12 @@
 require 'spec_helper'
 ENV['APP_ENV'] = 'test'
 
-ENV['GITHUB_TOKEN'] = ""
-ENV['GITHUB_REPOSITORY'] = "Sample/TestRepo"
-ENV['GITHUB_BASE_REF'] = ""
-ENV['GITHUB_REF'] = ""
-ENV['GITHUB_HEAD_REF'] = ""
-ENV['GITHUB_ACTOR'] = "TestUser"
+ENV['GITHUB_TOKEN'] = ''
+ENV['GITHUB_REPOSITORY'] = 'Sample/TestRepo'
+ENV['GITHUB_BASE_REF'] = ''
+ENV['GITHUB_REF'] = ''
+ENV['GITHUB_HEAD_REF'] = ''
+ENV['GITHUB_ACTOR'] = 'TestUser'
 
 require 'simplecov'
 SimpleCov.start do
@@ -36,7 +36,7 @@ require 'factory_bot'
 # directory. Alternatively, in the individual `*_spec.rb` files, manually
 # require only the support files necessary.
 #
-Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
+Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
 
 # Disable external connections - Mock them within the app.
 WebMock.disable_net_connect!(allow_localhost: true)

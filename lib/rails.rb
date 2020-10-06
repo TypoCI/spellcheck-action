@@ -2,7 +2,7 @@
 #
 class Rails
   def self.root
-    @root ||= Pathname.new(File.expand_path("./"))
+    @root ||= Pathname.new(File.expand_path('./'))
   end
 
   def self.env

@@ -16,7 +16,7 @@ RSpec.describe Github::CheckSuites::ConfigurationService do
     subject { instance_class.configuration }
 
     let(:default_values_with_ignores) do
-      Spellcheck::Configuration::DEFAULT_VALUES.merge({ excluded_words: ["typoci", "Sample", "TestRepo"] })
+      Spellcheck::Configuration::DEFAULT_VALUES.merge({ excluded_words: %w[typoci Sample TestRepo] })
     end
 
     context 'Without .typo-ci.yml file' do

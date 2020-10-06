@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe Spellcheck::GitDiff do
   let(:path) { 'spec/fixtures/files/ruby_sample.rb' }
   let(:patch) do
-    "@@ -0,0 +1,18 @@\n" +
-      "+---\n" +
-      "+layout: post\n" +
+    "@@ -0,0 +1,18 @@\n" \
+      "+---\n" \
+      "+layout: post\n" \
       '+ - MathedMan'
   end
 
@@ -28,9 +28,9 @@ RSpec.describe Spellcheck::GitDiff do
 
     context 'misspelling repeated in part of word' do
       let(:patch) do
-        "@@ -0,0 +1,18 @@\n" +
-          "+---\n" +
-          "+based\n" +
+        "@@ -0,0 +1,18 @@\n" \
+          "+---\n" \
+          "+based\n" \
           '+ ase'
       end
 

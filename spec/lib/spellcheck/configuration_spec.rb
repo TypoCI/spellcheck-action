@@ -47,7 +47,7 @@ RSpec.describe Spellcheck::Configuration do
         instance_class.excluded_words += ['Pear']
       end
 
-      it { expect(subject[:excluded_words]).to eq(['Apple', 'Pear']) }
+      it { expect(subject[:excluded_words]).to eq(%w[Apple Pear]) }
     end
   end
 

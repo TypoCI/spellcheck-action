@@ -8,6 +8,6 @@ class Github::Event::Push < Github::Event
   end
 
   def base_sha
-    data.dig(:before)
+    data[:before]
   end
 end
