@@ -15,7 +15,24 @@ class Github::CheckSuite < ApplicationRecord
     'allcontributors[bot]'
   ].freeze
 
-  attr_accessor :github_token, :github_run_id, :repository_full_name, :head_sha, :pull_request_number, :head_branch, :actor, :configuration, :custom_configuration_file, :custom_configuration_valid, :check_run_id, :conclusion, :started_at, :completed_at, :files_analysed_count, :spelling_mistakes_count, :invalid_words, :annotations, :file_name_extensions
+  attr_accessor :github_token,
+                :github_run_id,
+                :repository_full_name,
+                :head_sha,
+                :pull_request_number,
+                :head_branch, :actor,
+                :configuration,
+                :custom_configuration_file,
+                :custom_configuration_valid,
+                :check_run_id,
+                :conclusion,
+                :started_at,
+                :completed_at,
+                :files_analysed_count,
+                :spelling_mistakes_count,
+                :invalid_words,
+                :annotations,
+                :file_name_extensions
 
   alias custom_configuration_valid? custom_configuration_valid
   alias custom_configuration_file? custom_configuration_file
