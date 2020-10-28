@@ -1,7 +1,7 @@
 module TypoCi
   class App
     def self.run
-      self.new.call
+      new.call
     end
 
     def call
@@ -20,11 +20,11 @@ module TypoCi
 
     def github_event
       @github_event ||= Github::Event.const_get(ENV['GITHUB_EVENT_NAME'].classify)
-                                     .new(github_event_path: ENV["GITHUB_EVENT_PATH"])
+                                     .new(github_event_path: ENV['GITHUB_EVENT_PATH'])
     end
 
     def supported_github_event?
-      ENV['GITHUB_EVENT_NAME'].in?(['pull_request', 'push'])
+      ENV['GITHUB_EVENT_NAME'].in?(%w[pull_request push])
     end
 
     def unsupported_event_error

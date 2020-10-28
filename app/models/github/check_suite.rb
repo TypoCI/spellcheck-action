@@ -12,20 +12,30 @@ class Github::CheckSuite < ApplicationRecord
     'github-actions[bot]',
     'gatsbybot',
     'greenkeeper[bot]',
-    'allcontributors[bot]',
+    'allcontributors[bot]'
   ].freeze
 
-  attr_accessor :github_token, :github_run_id
-  attr_accessor :repository_full_name, :head_sha, :pull_request_number, :head_branch, :actor
-  attr_accessor :configuration, :custom_configuration_file, :custom_configuration_valid
-  attr_accessor :check_run_id, :conclusion
-  attr_accessor :started_at, :completed_at,
-                :files_analysed_count, :spelling_mistakes_count,
+  attr_accessor :github_token,
+                :github_run_id,
+                :repository_full_name,
+                :head_sha,
+                :pull_request_number,
+                :head_branch, :actor,
+                :configuration,
+                :custom_configuration_file,
+                :custom_configuration_valid,
+                :check_run_id,
+                :conclusion,
+                :started_at,
+                :completed_at,
+                :files_analysed_count,
+                :spelling_mistakes_count,
                 :invalid_words,
-                :annotations, :file_name_extensions
+                :annotations,
+                :file_name_extensions
 
-  alias_method :custom_configuration_valid?, :custom_configuration_valid
-  alias_method :custom_configuration_file?, :custom_configuration_file
+  alias custom_configuration_valid? custom_configuration_valid
+  alias custom_configuration_file? custom_configuration_file
 
   def initialize(github_token: nil, github_run_id: nil, repository_full_name: nil, head_branch: nil, head_sha: nil, pull_request_number: nil, actor: nil)
     @github_token = github_token
@@ -48,7 +58,7 @@ class Github::CheckSuite < ApplicationRecord
 
   def analysable?
     return false if actor_banned?
-    return false if (gh_pages_branch? && !pull_request?)
+    return false if gh_pages_branch? && !pull_request?
 
     true
   end
@@ -65,7 +75,7 @@ class Github::CheckSuite < ApplicationRecord
     custom_configuration_file? && !custom_configuration_valid?
   end
 
-  def time_processing(&block)
+  def time_processing
     @started_at = Time.zone.now
     yield
     @completed_at = Time.zone.now

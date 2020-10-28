@@ -1,6 +1,5 @@
 class Github::FileService
-  attr_reader :dictionaries
-  attr_reader :configuration
+  attr_reader :dictionaries, :configuration
 
   def initialize(file_hash, repo:, head_sha:, configuration:)
     @file_hash = file_hash
@@ -64,6 +63,6 @@ class Github::FileService
   end
 
   def added_or_modified?
-    @file_hash[:status].in?(['added', 'modified'])
+    @file_hash[:status].in?(%w[added modified])
   end
 end

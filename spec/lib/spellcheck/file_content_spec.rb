@@ -32,7 +32,7 @@ RSpec.describe Spellcheck::FileContent do
     subject { described_class.new(contents, path: path, configuration: configuration).invalid_words }
 
     context 'Brazilian Dictionary' do
-      let(:configuration) { Spellcheck::Configuration.new(dictionaries: ['en', 'pt', 'pt_BR']) }
+      let(:configuration) { Spellcheck::Configuration.new(dictionaries: %w[en pt pt_BR]) }
       let(:contents) { 'aprender código Código Educodar educodar concorda conduta inscrever quero tricerácio voluntárias técnica' }
       it { expect(subject.collect(&:word)).to eq([]) }
 
@@ -193,37 +193,37 @@ RSpec.describe Spellcheck::FileContent do
 
     context 'contents is words starting with quote and hyphen' do
       let(:contents) { " -apple pear-pear 'apple \"apple" }
-      it { is_expected.to eq("  apple pear-pear  apple  apple") }
+      it { is_expected.to eq('  apple pear-pear  apple  apple') }
     end
 
     context 'contents is google analytics code sample' do
       let(:contents) { "window,document,'script','dataLayer','GTM-0000000'" }
-      it { is_expected.to eq("window document  script   dataLayer   GTM-        ") }
+      it { is_expected.to eq('window document  script   dataLayer   GTM-        ') }
     end
 
     context 'contents is a start of a ruby array' do
       let(:contents) { "['-newkey'] [\"-newkey" }
-      it { is_expected.to eq("   newkey      newkey") }
+      it { is_expected.to eq('   newkey      newkey') }
     end
 
     context "contents is a python line with f' at start" do
       let(:contents) { "                f'ModelCheckpoint mode {mode} is unknown, '" }
-      it { is_expected.to eq("                  ModelCheckpoint mode  mode  is unknown   ") }
+      it { is_expected.to eq('                  ModelCheckpoint mode  mode  is unknown   ') }
     end
 
-    context "contents is a comment in python" do
+    context 'contents is a comment in python' do
       let(:contents) { "'''Get number of parameters in each layer'''" }
-      it { is_expected.to eq("   Get number of parameters in each layer   ") }
+      it { is_expected.to eq('   Get number of parameters in each layer   ') }
     end
 
-    context "contents is a mixin in SCSS" do
-      let(:contents) { "@mixin btn-outline($bg, $color: #ffffff) {" }
-      it { is_expected.to eq(" mixin btn-outline  bg   color            ") }
+    context 'contents is a mixin in SCSS' do
+      let(:contents) { '@mixin btn-outline($bg, $color: #ffffff) {' }
+      it { is_expected.to eq(' mixin btn-outline  bg   color            ') }
     end
 
-    context "contents is reference to Netlify CDN" do
+    context 'contents is reference to Netlify CDN' do
       let(:contents) { '<img class="w-auto mx-auto rounded" src="https://d33wubrfki0l68.cloudfront.net/56e004aaa985df6b331598ddd588c95c8302dd99/faba2/images/typo-ci.png" alt="Typo CI Logo" width="232" height="148" loading="lazy">' }
-      it { is_expected.to eq(" img class  w-auto mx-auto rounded  src                                                                                              typo-ci png  alt  Typo CI Logo  width       height       loading  lazy  ") }
+      it { is_expected.to eq(' img class  w-auto mx-auto rounded  src                                                                                              typo-ci png  alt  Typo CI Logo  width       height       loading  lazy  ') }
     end
   end
 end

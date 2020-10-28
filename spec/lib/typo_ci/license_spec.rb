@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe TypoCi::License do
-  describe "::valid?" do
+  describe '::valid?' do
     subject { described_class.valid? }
     before do
       ENV['INPUT_TYPO_CI_LICENSE_KEY'] = 'XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX'

@@ -1,8 +1,8 @@
 class Github::CheckSuites::ConfigurationService
   attr_accessor :custom_configuration_file, :custom_configuration_valid
 
-  alias_method :custom_configuration_valid?, :custom_configuration_valid
-  alias_method :custom_configuration_file?, :custom_configuration_file
+  alias custom_configuration_valid? custom_configuration_valid
+  alias custom_configuration_file? custom_configuration_file
 
   def initialize(github_check_suite)
     @custom_configuration_file = false
