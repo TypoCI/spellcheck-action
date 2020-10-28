@@ -15,6 +15,7 @@
 
 **Merged pull requests:**
 
+- link to RSpec workflow results instead of badge [\#44](https://github.com/TypoCI/spellcheck-action/pull/44) ([LucasLarson](https://github.com/LucasLarson))
 - Adding follow link for @MikeRogers0 [\#33](https://github.com/TypoCI/spellcheck-action/pull/33) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bump rubocop from 0.90.0 to 0.92.0 [\#31](https://github.com/TypoCI/spellcheck-action/pull/31) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Bump rubocop from 0.89.1 to 0.90.0 [\#21](https://github.com/TypoCI/spellcheck-action/pull/21) ([dependabot[bot]](https://github.com/apps/dependabot))
