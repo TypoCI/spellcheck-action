@@ -11,7 +11,7 @@ Checks for spelling errors within commits via a GitHub Action
 </p>
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/MikeRogers0?label=Follow%20%40MikeRogers0%20For%20Updates&style=social)](https://twitter.com/MikeRogers0)
-![RSpec](https://github.com/TypoCI/spellcheck-action/workflows/RSpec/badge.svg)
+[![RSpec](https://github.com/TypoCI/spellcheck-action/workflows/RSpec/badge.svg)](https://github.com/TypoCI/spellcheck-action/actions?query=workflow:RSpec)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/cc1820c92e584c289289d52b2e5823cc)](https://www.codacy.com/gh/TypoCI/spellcheck-action?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TypoCI/spellcheck-action&amp;utm_campaign=Badge_Grade)
 
 **Note: If you're using this GitHub Action on a private repository you must [purchase a license](https://gum.co/MvvBE) after 30 days.**
