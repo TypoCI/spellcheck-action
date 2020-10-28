@@ -2,7 +2,9 @@
 name: Linters
 
 on:
-  pull_request:
+  push:
+    branches-ignore:
+      - master
 
 jobs:
   # https://github.com/github/super-linter
