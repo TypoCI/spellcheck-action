@@ -25,15 +25,15 @@ class Spellcheck::WordPart
   # in an interlaced fashion.
   def suggestions
     @suggestions ||= begin
-                       dictionary_suggestions = dictionaries
-                                                .collect { |dictionary| suggestions_for_word_part_for_dictionary(dictionary) }
-                                                .reject(&:empty?)
-                                                .inject { |final_array, array| final_array.zip(array) }
-                       dictionary_suggestions = (dictionary_suggestions || []).flatten.compact.uniq[0, 4]
+      dictionary_suggestions = dictionaries
+                               .collect { |dictionary| suggestions_for_word_part_for_dictionary(dictionary) }
+                               .reject(&:empty?)
+                               .inject { |final_array, array| final_array.zip(array) }
+      dictionary_suggestions = (dictionary_suggestions || []).flatten.compact.uniq[0, 4]
 
-                       dictionary_suggestions.collect!(&:capitalize) if capitalized?
-                       dictionary_suggestions
-                     end
+      dictionary_suggestions.collect!(&:capitalize) if capitalized?
+      dictionary_suggestions
+    end
   end
 
   private

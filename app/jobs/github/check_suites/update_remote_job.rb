@@ -34,7 +34,7 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
   end
 
   def add_remaining_annotations_to_check_run_on_github!
-    (annotations[50..] || []).in_groups_of(50, false).each_with_index do |annotations_group, index|
+    (annotations[50..] || []).in_groups_of(50, false).each_with_index do |annotations_group, _index|
       github_octokit_service.update_check_run(
         @github_check_suite.repository_full_name,
         @github_check_suite.check_run_id,
@@ -54,7 +54,7 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
   end
 
   def check_run_name
-    I18n.t("check_run_name", scope: ['jobs', self.class.name.underscore])
+    I18n.t('check_run_name', scope: ['jobs', self.class.name.underscore])
   end
 
   def output_title
@@ -80,7 +80,7 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
 
   def output_summary_license
     I18n.t(
-      "output_summary_license.#{ TypoCi::License.valid? ? 'valid' : 'invalid' }",
+      "output_summary_license.#{TypoCi::License.valid? ? 'valid' : 'invalid'}",
       scope: ['jobs', self.class.name.underscore]
     )
   end

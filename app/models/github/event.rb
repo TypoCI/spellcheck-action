@@ -5,7 +5,7 @@ class Github::Event < ApplicationRecord
   attr_accessor :github_event_path
 
   def initialize(github_event_path:)
-    @github_event_path = github_event_path || ENV["GITHUB_EVENT_PATH"]
+    @github_event_path = github_event_path || ENV['GITHUB_EVENT_PATH']
   end
 
   def head_sha
@@ -54,9 +54,9 @@ class Github::Event < ApplicationRecord
 
   def data
     @data ||= begin
-                JSON.parse(File.read(github_event_path), symbolize_names: true)
-              rescue Errno::ENOENT
-                {}
-              end
+      JSON.parse(File.read(github_event_path), symbolize_names: true)
+    rescue Errno::ENOENT
+      {}
+    end
   end
 end

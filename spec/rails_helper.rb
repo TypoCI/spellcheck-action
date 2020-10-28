@@ -2,12 +2,12 @@
 require 'spec_helper'
 ENV['APP_ENV'] = 'test'
 
-ENV['GITHUB_TOKEN'] = ""
-ENV['GITHUB_REPOSITORY'] = "Sample/TestRepo"
-ENV['GITHUB_BASE_REF'] = ""
-ENV['GITHUB_REF'] = ""
-ENV['GITHUB_HEAD_REF'] = ""
-ENV['GITHUB_ACTOR'] = "TestUser"
+ENV['GITHUB_TOKEN'] = ''
+ENV['GITHUB_REPOSITORY'] = 'Sample/TestRepo'
+ENV['GITHUB_BASE_REF'] = ''
+ENV['GITHUB_REF'] = ''
+ENV['GITHUB_HEAD_REF'] = ''
+ENV['GITHUB_ACTOR'] = 'TestUser'
 
 require 'simplecov'
 SimpleCov.start do

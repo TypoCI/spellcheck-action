@@ -40,7 +40,7 @@ class Github::Repositories::AnalysisService
     return # Skip threading for now.
 
     threads = []
-    files.in_groups_of((files.size / 2).to_i, false).each_with_index do |group, index|
+    files.in_groups_of((files.size / 2).to_i, false).each_with_index do |group, _index|
       threads << Thread.new { group.collect(&:invalid_words) }
     end
     threads.each(&:join)

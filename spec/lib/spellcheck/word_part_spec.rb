@@ -31,6 +31,6 @@ RSpec.describe Spellcheck::WordPart do
   describe '#suggestions' do
     subject { instance_class.suggestions }
     let(:word) { 'topbar' }
-    it { is_expected.to eq(["top bar", "tophat", "top-bar"]) }
+    it { is_expected.to eq(['top bar', 'tophat', 'top-bar']) }
   end
 end

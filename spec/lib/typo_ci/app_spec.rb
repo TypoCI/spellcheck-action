@@ -10,7 +10,7 @@ RSpec.describe TypoCi::App do
     ENV['GITHUB_HEAD_REF'] = 'feature/add-debugging'
   end
 
-  describe "#call" do
+  describe '#call' do
     subject { instance_class.call }
 
     it do
