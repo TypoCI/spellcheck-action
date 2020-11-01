@@ -6,6 +6,7 @@ class Github::Event < ApplicationRecord
 
   def initialize(github_event_path:)
     @github_event_path = github_event_path || ENV['GITHUB_EVENT_PATH']
+    TypoCi::Logger.info(data.inspect)
   end
 
   def head_sha
