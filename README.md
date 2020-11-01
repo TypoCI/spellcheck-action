@@ -28,9 +28,8 @@ name: Typo CI
 
 on:
   push:
-    branches:
+    branches-ignore:
       - master
-  pull_request:
 jobs:
   spellcheck:
     name: Typo CI (GitHub Action)
