@@ -50,8 +50,6 @@ class Github::CheckSuite < ApplicationRecord
     @sender_type = sender_type
     @repository_private = repository_private
 
-    TypoCi::Logger.info([sender_type, repository_private].inspect)
-
     @conclusion = 'pending'
     @configuration = nil
     @custom_configuration_file = false
