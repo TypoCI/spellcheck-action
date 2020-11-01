@@ -29,6 +29,7 @@ class Spellcheck::Configuration
             it
             pt
             pt_BR
+            tr
           ]
         }
       },
