@@ -15,8 +15,11 @@
 
 **Merged pull requests:**
 
+- Blocking bot users from trigger actions [\#52](https://github.com/TypoCI/spellcheck-action/pull/52) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating Readme to include upsell about GitHub App [\#51](https://github.com/TypoCI/spellcheck-action/pull/51) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding support for Turkish [\#50](https://github.com/TypoCI/spellcheck-action/pull/50) ([MikeRogers0](https://github.com/MikeRogers0))
+- Bump rubocop from 0.92.0 to 1.1.0 [\#49](https://github.com/TypoCI/spellcheck-action/pull/49) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump zeitwerk from 2.4.0 to 2.4.1 [\#48](https://github.com/TypoCI/spellcheck-action/pull/48) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Updating all the gems to latest [\#46](https://github.com/TypoCI/spellcheck-action/pull/46) ([MikeRogers0](https://github.com/MikeRogers0))
 - Update Rubocop GitHub Action [\#45](https://github.com/TypoCI/spellcheck-action/pull/45) ([MikeRogers0](https://github.com/MikeRogers0))
 - link to RSpec workflow results instead of badge [\#44](https://github.com/TypoCI/spellcheck-action/pull/44) ([LucasLarson](https://github.com/LucasLarson))
