@@ -15,6 +15,7 @@
 
 **Merged pull requests:**
 
+- Updating Readme to include upsell about GitHub App [\#51](https://github.com/TypoCI/spellcheck-action/pull/51) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding support for Turkish [\#50](https://github.com/TypoCI/spellcheck-action/pull/50) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating all the gems to latest [\#46](https://github.com/TypoCI/spellcheck-action/pull/46) ([MikeRogers0](https://github.com/MikeRogers0))
 - Update Rubocop GitHub Action [\#45](https://github.com/TypoCI/spellcheck-action/pull/45) ([MikeRogers0](https://github.com/MikeRogers0))
