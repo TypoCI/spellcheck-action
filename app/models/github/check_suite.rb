@@ -1,18 +1,7 @@
 class Github::CheckSuite < ApplicationRecord
-  BlockedAuthors = [
-    'pull[bot]',
-    'tensorflow-copybara',
-    'restyled-io[bot]',
-    'github-actions[bot]',
-    'renovate[bot]',
-    'dependabot-preview[bot]',
-    'dependabot[bot]',
-    'depfu[bot]',
-    'imgbot[bot]',
-    'github-actions[bot]',
-    'gatsbybot',
-    'greenkeeper[bot]',
-    'allcontributors[bot]'
+  BlockedAuthors = %w[
+    tensorflow-copybara
+    gatsbybot
   ].freeze
 
   attr_accessor :github_token,
@@ -94,6 +83,6 @@ class Github::CheckSuite < ApplicationRecord
   private
 
   def actor_banned?
-    actor.in?(BlockedAuthors)
+    sender_type == 'Bot' || actor.in?(BlockedAuthors)
   end
 end
