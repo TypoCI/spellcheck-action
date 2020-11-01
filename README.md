@@ -14,7 +14,9 @@ Checks for spelling errors within commits via a GitHub Action
 [![RSpec](https://github.com/TypoCI/spellcheck-action/workflows/RSpec/badge.svg)](https://github.com/TypoCI/spellcheck-action/actions?query=workflow:RSpec)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/cc1820c92e584c289289d52b2e5823cc)](https://www.codacy.com/gh/TypoCI/spellcheck-action?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TypoCI/spellcheck-action&amp;utm_campaign=Badge_Grade)
 
-**Note: If you're using this GitHub Action on a private repository you must [purchase a license](https://gum.co/MvvBE) after 30 days.**
+**Note: If you're using this GitHub Action on a private repository you must [purchase a license](https://gum.co/MvvBE).**
+
+Alternatively you may also want to consider using the [Typo CI GitHub App](https://github.com/marketplace/typo-ci/).
 
 ## Installation
 
@@ -95,7 +97,7 @@ spellcheck_filenames: true
 
 ## The Prosperity Public License 3.0.0
 
-This is free for open source, but if you're using it on a private repo then your are required to purchase a license key after 30 days of usage.
+This is free for open source, but if you're using it on a private repo then your are required to purchase a license key.
 
 You can purchase a license via [Gumroad](https://gum.co/MvvBE) for $15 (excluding taxes). It helps support the ongoing development and every purchase is very appreciated.
 

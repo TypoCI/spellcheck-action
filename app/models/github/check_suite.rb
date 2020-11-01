@@ -32,12 +32,14 @@ class Github::CheckSuite < ApplicationRecord
                 :spelling_mistakes_count,
                 :invalid_words,
                 :annotations,
-                :file_name_extensions
+                :file_name_extensions,
+                :sender_type,
+                :repository_private
 
   alias custom_configuration_valid? custom_configuration_valid
   alias custom_configuration_file? custom_configuration_file
 
-  def initialize(github_token: nil, github_run_id: nil, repository_full_name: nil, head_branch: nil, head_sha: nil, pull_request_number: nil, actor: nil)
+  def initialize(github_token: nil, github_run_id: nil, repository_full_name: nil, head_branch: nil, head_sha: nil, pull_request_number: nil, actor: nil, sender_type: nil, repository_private: nil)
     @github_token = github_token
     @github_run_id = github_run_id
     @repository_full_name = repository_full_name
@@ -45,6 +47,8 @@ class Github::CheckSuite < ApplicationRecord
     @head_sha = head_sha
     @pull_request_number = pull_request_number
     @actor = actor
+    @sender_type = sender_type
+    @repository_private = repository_private
 
     @conclusion = 'pending'
     @configuration = nil

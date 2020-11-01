@@ -24,6 +24,8 @@ class Github::Event < ApplicationRecord
       head_branch: head_branch,
       head_sha: head_sha,
       actor: actor,
+      sender_type: sender_type,
+      repository_private: repository_private,
       pull_request_number: nil
     }
   end
@@ -48,6 +50,14 @@ class Github::Event < ApplicationRecord
 
   def head_branch
     ENV['GITHUB_HEAD_REF']
+  end
+
+  def sender_type
+    data.dig(:sender, :type)
+  end
+
+  def repository_private
+    data.dig(:repository, :private)
   end
 
   private
