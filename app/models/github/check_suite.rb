@@ -1,7 +1,7 @@
 class Github::CheckSuite < ApplicationRecord
-  BlockedAuthors = [
-    'tensorflow-copybara',
-    'gatsbybot',
+  BlockedAuthors = %w[
+    tensorflow-copybara
+    gatsbybot
   ].freeze
 
   attr_accessor :github_token,
