@@ -39,5 +39,14 @@ RSpec.describe Github::CheckSuites::RequestedJob, type: :job do
         subject
       end
     end
+
+    context "check suite is made by bot user" do
+      let(:github_check_suite) { build(:github_check_suite, :bot_commit) }
+
+      it 'Does not queue up AnalysisJob' do
+        expect(Github::CheckSuites::AnalysisJob).to_not receive(:perform_now)
+        subject
+      end
+    end
   end
 end
