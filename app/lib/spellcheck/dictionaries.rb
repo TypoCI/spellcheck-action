@@ -21,6 +21,7 @@ class Spellcheck::Dictionaries
       'it' => FFI::Hunspell.dict('dictionary-it/index'),
       'pt' => FFI::Hunspell.dict('dictionary-pt/index'),
       'pt_BR' => FFI::Hunspell.dict('pt_BR'),
+      'tr' => FFI::Hunspell.dict('dictionary-tr/index'),
       'combined' => FFI::Hunspell.dict('combined')
     }
   end

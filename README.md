@@ -64,6 +64,7 @@ You can tweak how Typo CI analyses your code by adding a `.typo-ci.yml` file to 
 # it
 # pt
 # pt_BR
+# tr
 dictionaries:
   - en
   - en_GB
