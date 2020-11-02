@@ -37,7 +37,7 @@ group :test do
   gem 'codecov', '~> 0.2.9', require: false
   gem 'factory_bot'
   gem 'faker'
-  gem 'rspec', '~> 3.9.0'
+  gem 'rspec', '~> 3.10.0'
   gem 'simplecov'
   gem 'webmock', '~> 3.8'
 end
