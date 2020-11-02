@@ -15,6 +15,7 @@
 
 **Merged pull requests:**
 
+- Bump rspec from 3.9.0 to 3.10.0 [\#54](https://github.com/TypoCI/spellcheck-action/pull/54) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Encourage running on "push" over "pull\_request" [\#53](https://github.com/TypoCI/spellcheck-action/pull/53) ([MikeRogers0](https://github.com/MikeRogers0))
 - Blocking bot users from trigger actions [\#52](https://github.com/TypoCI/spellcheck-action/pull/52) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating Readme to include upsell about GitHub App [\#51](https://github.com/TypoCI/spellcheck-action/pull/51) ([MikeRogers0](https://github.com/MikeRogers0))
