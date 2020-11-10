@@ -105,7 +105,7 @@ GEM
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
-    webmock (3.9.3)
+    webmock (3.9.5)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
@@ -133,7 +133,7 @@ DEPENDENCIES
   rubocop (~> 1.1.0)
   sentry-raven
   simplecov
-  webmock (~> 3.8)
+  webmock (~> 3.9)
   zeitwerk
 
 RUBY VERSION
