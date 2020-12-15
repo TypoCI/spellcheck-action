@@ -96,7 +96,7 @@ spellcheck_filenames: true
 
 ## The Prosperity Public License 3.0.0
 
-This is free for open source, but if you're using it on a private repo then your are required to purchase a license key.
+This is free for open source, but if you're using it on a private repo then you are required to purchase a license key.
 
 You can purchase a license via [Gumroad](https://gum.co/MvvBE) for $15 (excluding taxes). It helps support the ongoing development and every purchase is very appreciated.
 
