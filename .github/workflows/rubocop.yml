@@ -25,6 +25,5 @@ jobs:
       run: |
         bundle config path vendor/bundle
         gem install rubocop
-        gem install rubocop-rails
     - name: Run RuboCop
       run: rubocop --parallel
