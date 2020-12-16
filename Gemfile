@@ -1,34 +1,20 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
-
 ruby File.read('.ruby-version').chomp
 
-gem 'rake'
-
-# Exception Notifier
-gem 'sentry-raven'
-
-# Spell Checker
-gem 'ffi-hunspell' # , github: 'postmodern/ffi-hunspell', branch: 'master'
-gem 'mimemagic'
-
-# GitHub API
+gem 'activesupport'
+gem 'ffi-hunspell'
 gem 'git'
 gem 'git_diff_parser'
-gem 'jwt'
-gem 'octokit'
-
-# Validating JSON/YAML
 gem 'json-schema'
-
-# Ruby Library Loader
+gem 'jwt'
+gem 'mimemagic'
+gem 'octokit'
+gem 'rake'
+gem 'sentry-raven'
 gem 'zeitwerk'
 
-# Make dates & such easier in plain Ruby
-gem 'activesupport'
-
 group :development do
-  gem 'github_changelog_generator', '~> 1.15.0'
   gem 'i18n-debug'
   gem 'rubocop'
 end
