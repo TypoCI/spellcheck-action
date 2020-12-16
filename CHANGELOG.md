@@ -15,6 +15,7 @@
 
 **Merged pull requests:**
 
+- Updating to Ruby 2.7.2 [\#79](https://github.com/TypoCI/spellcheck-action/pull/79) ([MikeRogers0](https://github.com/MikeRogers0))
 - Only tracking major version tag for GitHub Actions [\#78](https://github.com/TypoCI/spellcheck-action/pull/78) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating Rubocop and its rules [\#77](https://github.com/TypoCI/spellcheck-action/pull/77) ([MikeRogers0](https://github.com/MikeRogers0))
 - fix spelling mistake in readme [\#76](https://github.com/TypoCI/spellcheck-action/pull/76) ([Oxygemo](https://github.com/Oxygemo))
