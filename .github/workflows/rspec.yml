@@ -13,7 +13,7 @@ jobs:
       - name: Pull docker images
         run: |
           docker pull ruby:2.7.1-alpine
-      - uses: satackey/action-docker-layer-caching@v0.0.8
+      - uses: satackey/action-docker-layer-caching@v0
       - name: Build the latest image
         run: |
           docker build . -t typo-ci-spelling-action:latest
