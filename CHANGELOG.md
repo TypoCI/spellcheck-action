@@ -15,6 +15,7 @@
 
 **Merged pull requests:**
 
+- Updating changelog on release [\#81](https://github.com/TypoCI/spellcheck-action/pull/81) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bumping dependencies to latest versions [\#80](https://github.com/TypoCI/spellcheck-action/pull/80) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating to Ruby 2.7.2 [\#79](https://github.com/TypoCI/spellcheck-action/pull/79) ([MikeRogers0](https://github.com/MikeRogers0))
 - Only tracking major version tag for GitHub Actions [\#78](https://github.com/TypoCI/spellcheck-action/pull/78) ([MikeRogers0](https://github.com/MikeRogers0))
