@@ -116,4 +116,4 @@ Other languages have been imported via NPM from [wooorm/dictionaries](https://gi
 
 ## Testing
 
-- Run `docker-compose run --rm web bin/setup` & `docker-compose run --rm web rspec`.
+  - Run `docker-compose run --rm web bin/setup` & `docker-compose run --rm web rspec`.
