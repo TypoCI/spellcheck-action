@@ -1,6 +1,7 @@
 name: Changelog
 
 on:
+  release:
   push:
     branches:
       - master
