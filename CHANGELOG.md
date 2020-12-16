@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/TypoCI/spellcheck-action/tree/HEAD)
+## [v0.3.0](https://github.com/TypoCI/spellcheck-action/tree/v0.3.0) (2020-12-16)
 
-[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.2.0...HEAD)
+[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.2.0...v0.3.0)
 
 **Implemented enhancements:**
 
