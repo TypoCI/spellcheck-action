@@ -20,7 +20,6 @@ group :development do
 end
 
 group :test do
-  gem 'codecov', '~> 0.2.9', require: false
   gem 'factory_bot'
   gem 'faker'
   gem 'rspec', '~> 3.10.0'
