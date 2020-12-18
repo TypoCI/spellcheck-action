@@ -7,7 +7,7 @@
 </h1>
 
 <p align="center">
-Checks for spelling errors within commits via a GitHub Action
+Checks for spelling mistakes within code via a GitHub Action
 </p>
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/MikeRogers0?label=Follow%20%40MikeRogers0%20For%20Updates&style=social)](https://twitter.com/MikeRogers0)
