@@ -1,5 +1,5 @@
-name: 'Typo CI - Spellcheck Action'
-description: 'Check for typos & spelling mistakes, then displays suggestions.'
+name: 'Typo CI - Spell Check Code Action'
+description: 'Check code for typos & spelling mistakes, then displays suggestions.'
 author: 'Mike Rogers <me@mikerogers.io>'
 
 branding:
