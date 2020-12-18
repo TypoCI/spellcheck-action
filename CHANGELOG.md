@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/TypoCI/spellcheck-action/tree/HEAD)
+
+[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.3.0...HEAD)
+
+**Merged pull requests:**
+
+- Copy: Be clearer it checks code for spelling mistakes [\#82](https://github.com/TypoCI/spellcheck-action/pull/82) ([MikeRogers0](https://github.com/MikeRogers0))
+
 ## [v0.3.0](https://github.com/TypoCI/spellcheck-action/tree/v0.3.0) (2020-12-16)
 
 [Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.2.0...v0.3.0)
