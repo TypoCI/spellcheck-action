@@ -24,5 +24,5 @@ group :test do
   gem 'faker'
   gem 'rspec', '~> 3.10.0'
   gem 'simplecov'
-  gem 'webmock', '~> 3.8'
+  gem 'webmock', '~> 3.11'
 end
