@@ -24,7 +24,7 @@ GEM
     ffi (1.13.1)
     ffi-hunspell (0.6.0)
       ffi (~> 1.0)
-    git (1.7.0)
+    git (1.8.1)
       rchardet (~> 1.8)
     git_diff_parser (3.2.0)
     hashdiff (1.0.1)
