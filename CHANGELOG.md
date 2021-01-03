@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Updating Changelog Generator to push to master [\#89](https://github.com/TypoCI/spellcheck-action/pull/89) ([MikeRogers0](https://github.com/MikeRogers0))
 - Copy: Be clearer it checks code for spelling mistakes [\#82](https://github.com/TypoCI/spellcheck-action/pull/82) ([MikeRogers0](https://github.com/MikeRogers0))
 
 ## [v0.3.0](https://github.com/TypoCI/spellcheck-action/tree/v0.3.0) (2020-12-16)
