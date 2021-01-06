@@ -1,5 +1,5 @@
 class Github::CheckSuite < ApplicationRecord
-  BlockedAuthors = %w[
+  BLOCKED_AUTHORS = %w[
     tensorflow-copybara
     gatsbybot
   ].freeze
@@ -83,6 +83,6 @@ class Github::CheckSuite < ApplicationRecord
   private
 
   def actor_banned?
-    sender_type == 'Bot' || actor.in?(BlockedAuthors)
+    sender_type == 'Bot' || actor.in?(BLOCKED_AUTHORS)
   end
 end
