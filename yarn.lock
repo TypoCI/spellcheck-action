@@ -7,10 +7,10 @@ dictionary-de@^2.0.3:
   resolved "https://registry.yarnpkg.com/dictionary-de/-/dictionary-de-2.0.4.tgz#854134aee36c591d0985e368176746182f1837e5"
   integrity sha512-TOTvLM7k4wJt3cgus1Ziuiqo5Tx0i+VEmXVDCDxsxHhRdSCnAQFonTx8/YlfGI+AQQIyMJhXfMnceKD56dZrMQ==
 
-dictionary-en-gb@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/dictionary-en-gb/-/dictionary-en-gb-2.2.2.tgz#836ffaf70080977fdceb6ad769b5d22d1106c9c0"
-  integrity sha512-36Pz/2BGmJfXtAo5+IGOi+U6gwtxFsFXFJMOX0FC1z2YeLd1IXkxsfAhieC06OrdGie3SqCZmUOYeYgct5Hzzw==
+dictionary-en-gb@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/dictionary-en-gb/-/dictionary-en-gb-2.3.0.tgz#f6aa1948350615507e39a4c3cae950caa681df52"
+  integrity sha512-P/J2VQp/hDsMTfJhmIYPUBxZqezWuDaUzSgb6oW7JLpUV2So9jCXbR5TaUYXwfO50ZXPYEzQqQHPQK3pKcs7Rg==
 
 dictionary-en@^3.0.1:
   version "3.0.1"
