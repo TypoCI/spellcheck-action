@@ -10,6 +10,7 @@
 
 **Merged pull requests:**
 
+- Bumping dependencies to latest [\#97](https://github.com/TypoCI/spellcheck-action/pull/97) ([MikeRogers0](https://github.com/MikeRogers0))
 - Refactoring StandardRB warnings [\#96](https://github.com/TypoCI/spellcheck-action/pull/96) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding support for .typo-ci.yml within .github folder [\#95](https://github.com/TypoCI/spellcheck-action/pull/95) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating Changelog Generator to push to master [\#89](https://github.com/TypoCI/spellcheck-action/pull/89) ([MikeRogers0](https://github.com/MikeRogers0))
