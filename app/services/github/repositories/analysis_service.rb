@@ -61,6 +61,8 @@ class Github::Repositories::AnalysisService
   def configuration_options
     if @repository_path.join('.typo-ci.yml').exist?
       YAML.safe_load(@repository_path.join('.typo-ci.yml').read)
+    elsif @repository_path.join('.github/.typo-ci.yml').exist?
+      YAML.safe_load(@repository_path.join('.github/.typo-ci.yml').read)
     else
       {}
     end

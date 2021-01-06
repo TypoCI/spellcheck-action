@@ -49,14 +49,15 @@ jobs:
 
 ## Configuration
 
-You can tweak how Typo CI analyses your code by adding a `.typo-ci.yml` file to the root of your repository. Here is a sample file:
+You can tweak how Typo CI analyses your code by adding a `.typo-ci.yml` file to the root of your repository (You can also add it within your `.github` folder). Here is a sample file:
 
 ```yml
 # This is a sample .typo-ci.yml file, it's used to configure how Typo CI will behave.
 # Add it to the root of your project and push it to github.
 ---
 
-# What language dictionaries should it use? Currently Typo CI supports:
+# What language dictionaries should it use? By default Typo CI will select 'en' & 'en_GB'
+# Currently Typo CI supports:
 # de
 # en
 # en_GB
