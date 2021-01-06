@@ -22,10 +22,10 @@ dictionary-es@^3.0.1:
   resolved "https://registry.yarnpkg.com/dictionary-es/-/dictionary-es-3.0.1.tgz#38a1d72732ab1d3ecadab94241b041b09b2d9d3d"
   integrity sha512-3fVNS9Y8h2RTreELq2Sq33Ue/eATiJHG/C2CIcXyCxU0BCCW57s1dNLwGH5SGJUDmnPrNNluZWqAKmGcUZgYbQ==
 
-dictionary-fr@^2.4.1:
-  version "2.5.1"
-  resolved "https://registry.yarnpkg.com/dictionary-fr/-/dictionary-fr-2.5.1.tgz#c91db15820664ed213f25f49e2d370012ff31ca0"
-  integrity sha512-+qxBM3HeRuY8XkIYDnn+Av9Wk0WM8jVFedYuw9EpPGBAU33tntLTtzxbJd6QEipJbj+Dbnb6b3dMw8tAWpx4eg==
+dictionary-fr@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/dictionary-fr/-/dictionary-fr-2.6.0.tgz#be3a232daf88837ac50d6a0808420b9515b2c903"
+  integrity sha512-JgD3jqbP/kqypvdHUPd7hyIO93ymPH07iJwLyzPM8zpMuS6B5CbLtL3D0eXGVb17pRVq+j3za9+/znGXkkXG2g==
 
 dictionary-it@^1.3.2:
   version "1.3.3"
