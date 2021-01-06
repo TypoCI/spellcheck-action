@@ -4,8 +4,13 @@
 
 [Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.3.0...HEAD)
 
+**Closed issues:**
+
+- Dictionary usage and config file location [\#90](https://github.com/TypoCI/spellcheck-action/issues/90)
+
 **Merged pull requests:**
 
+- Adding support for .typo-ci.yml within .github folder [\#95](https://github.com/TypoCI/spellcheck-action/pull/95) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating Changelog Generator to push to master [\#89](https://github.com/TypoCI/spellcheck-action/pull/89) ([MikeRogers0](https://github.com/MikeRogers0))
 - Copy: Be clearer it checks code for spelling mistakes [\#82](https://github.com/TypoCI/spellcheck-action/pull/82) ([MikeRogers0](https://github.com/MikeRogers0))
 
