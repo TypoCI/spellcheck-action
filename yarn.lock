@@ -17,10 +17,10 @@ dictionary-en@^3.0.1:
   resolved "https://registry.yarnpkg.com/dictionary-en/-/dictionary-en-3.0.1.tgz#bebcd9efcd7e2adf45470eb8cded9ea6010ad45e"
   integrity sha512-IMVLlTXYGlKwmzTMvRzLDx/BCl9Tq3l56xY7URaH4eZMIufl7myaaXJJyTH6qdjXOxKMOkzE2t3rp3Ql7QciBA==
 
-dictionary-es@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/dictionary-es/-/dictionary-es-3.0.1.tgz#38a1d72732ab1d3ecadab94241b041b09b2d9d3d"
-  integrity sha512-3fVNS9Y8h2RTreELq2Sq33Ue/eATiJHG/C2CIcXyCxU0BCCW57s1dNLwGH5SGJUDmnPrNNluZWqAKmGcUZgYbQ==
+dictionary-es@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/dictionary-es/-/dictionary-es-3.1.0.tgz#feddb790daea58a5ae4667f1fac663bb165c72d3"
+  integrity sha512-zUZ06ADfa/G/znQbGhz8juUPJQRxCYOTbeW7z06+4dsyGe4vbnrLY3zXCapEzqg0NXpVmliSTdPZ8SY8U8iMXA==
 
 dictionary-fr@^2.4.1:
   version "2.5.1"
