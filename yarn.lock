@@ -12,10 +12,10 @@ dictionary-en-gb@^2.2.2:
   resolved "https://registry.yarnpkg.com/dictionary-en-gb/-/dictionary-en-gb-2.2.2.tgz#836ffaf70080977fdceb6ad769b5d22d1106c9c0"
   integrity sha512-36Pz/2BGmJfXtAo5+IGOi+U6gwtxFsFXFJMOX0FC1z2YeLd1IXkxsfAhieC06OrdGie3SqCZmUOYeYgct5Hzzw==
 
-dictionary-en@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/dictionary-en/-/dictionary-en-3.0.1.tgz#bebcd9efcd7e2adf45470eb8cded9ea6010ad45e"
-  integrity sha512-IMVLlTXYGlKwmzTMvRzLDx/BCl9Tq3l56xY7URaH4eZMIufl7myaaXJJyTH6qdjXOxKMOkzE2t3rp3Ql7QciBA==
+dictionary-en@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/dictionary-en/-/dictionary-en-3.1.0.tgz#2883598f02c9ccfb8acf7aa513797b50eeec77d2"
+  integrity sha512-dNjhoQagh7GX3YUBdbzehy/+wR2GLhkdpkxF8wMEGIXxMrH6aqzMn/8CHP5xnF85qbv288gCt4XtPQEVCOmTeA==
 
 dictionary-es@^3.0.1:
   version "3.0.1"
