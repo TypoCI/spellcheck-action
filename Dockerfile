@@ -1,4 +1,4 @@
-FROM ruby:2.7.2-alpine AS builder
+FROM ruby:3.0.0-alpine AS builder
 
 LABEL com.github.actions.name="Typo CI - Spellcheck Action" \
       com.github.actions.description="Check for typos & spelling mistakes, then displays suggestions." \
