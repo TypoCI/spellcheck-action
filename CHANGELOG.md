@@ -6,10 +6,12 @@
 
 **Closed issues:**
 
+- Words in excluded\_words being flagged as typos [\#102](https://github.com/TypoCI/spellcheck-action/issues/102)
 - Dictionary usage and config file location [\#90](https://github.com/TypoCI/spellcheck-action/issues/90)
 
 **Merged pull requests:**
 
+- Removing Dependabot [\#105](https://github.com/TypoCI/spellcheck-action/pull/105) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bumping dependencies to latest [\#97](https://github.com/TypoCI/spellcheck-action/pull/97) ([MikeRogers0](https://github.com/MikeRogers0))
 - Refactoring StandardRB warnings [\#96](https://github.com/TypoCI/spellcheck-action/pull/96) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding support for .typo-ci.yml within .github folder [\#95](https://github.com/TypoCI/spellcheck-action/pull/95) ([MikeRogers0](https://github.com/MikeRogers0))
