@@ -11,6 +11,7 @@
 
 **Merged pull requests:**
 
+- Updating to Ruby 3.0 [\#106](https://github.com/TypoCI/spellcheck-action/pull/106) ([MikeRogers0](https://github.com/MikeRogers0))
 - Removing Dependabot [\#105](https://github.com/TypoCI/spellcheck-action/pull/105) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bumping dependencies to latest [\#97](https://github.com/TypoCI/spellcheck-action/pull/97) ([MikeRogers0](https://github.com/MikeRogers0))
 - Refactoring StandardRB warnings [\#96](https://github.com/TypoCI/spellcheck-action/pull/96) ([MikeRogers0](https://github.com/MikeRogers0))
