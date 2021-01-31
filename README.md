@@ -16,7 +16,7 @@ Checks for spelling mistakes within code via a GitHub Action
 
 **Note: If you're using this GitHub Action on a private repository you must [purchase a license](https://gum.co/MvvBE).**
 
-Alternatively you may also want to consider using the [Typo CI GitHub App](https://github.com/marketplace/typo-ci/).
+Alternatively you may also want to consider using the [Typo CI GitHub App](https://github.com/marketplace/typo-ci-spellcheck-commits-and-prs/).
 
 ## Installation
 
