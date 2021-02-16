@@ -31,7 +31,7 @@ ENV APP_ENV production
 COPY .ruby-version /usr/src/app
 COPY Gemfile /usr/src/app
 COPY Gemfile.lock /usr/src/app
-RUN bundle check || bundle install --jobs=$(nproc)
+RUN bundle check || bundle install --jobs="$(nproc)"
 
 # Install Yarn Libraries
 COPY package.json /usr/src/app
