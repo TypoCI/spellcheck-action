@@ -27,6 +27,7 @@ class Spellcheck::Configuration
             es
             fr
             it
+            nl
             pt
             pt_BR
             tr

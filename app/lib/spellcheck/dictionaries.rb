@@ -19,6 +19,7 @@ class Spellcheck::Dictionaries
       'es' => FFI::Hunspell.dict('dictionary-es/index'),
       'fr' => FFI::Hunspell.dict('dictionary-fr/index'),
       'it' => FFI::Hunspell.dict('dictionary-it/index'),
+      'nl' => FFI::Hunspell.dict('dictionary-nl/index'),
       'pt' => FFI::Hunspell.dict('dictionary-pt/index'),
       'pt_BR' => FFI::Hunspell.dict('pt_BR'),
       'tr' => FFI::Hunspell.dict('dictionary-tr/index'),
