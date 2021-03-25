@@ -11,7 +11,7 @@ LABEL com.github.actions.name="Typo CI - Spellcheck Action" \
       org.opencontainers.image.description="Check for typos & spelling mistakes, then displays suggestions." \
       maintainer="Mike Rogers <me@mikerogers.io>"
 
-RUN apk --no-cache add build-base git hunspell tzdata libffi-dev yarn
+RUN apk --no-cache add build-base git hunspell tzdata libffi-dev yarn shared-mime-info
 
 FROM builder AS development
 
