@@ -1,16 +1,23 @@
 # Changelog
 
-## [Unreleased](https://github.com/TypoCI/spellcheck-action/tree/HEAD)
+## [Unreleased](https://github.com/TypoCi/spellcheck-action/tree/HEAD)
 
-[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.3.0...HEAD)
+[Full Changelog](https://github.com/TypoCi/spellcheck-action/compare/v0.3.0...HEAD)
 
 **Closed issues:**
 
+- How to add another dictionary? [\#111](https://github.com/TypoCI/spellcheck-action/issues/111)
+- TypoCI is a typo, apparently [\#110](https://github.com/TypoCI/spellcheck-action/issues/110)
+- cronjon anyone? [\#109](https://github.com/TypoCI/spellcheck-action/issues/109)
 - Words in excluded\_words being flagged as typos [\#102](https://github.com/TypoCI/spellcheck-action/issues/102)
 - Dictionary usage and config file location [\#90](https://github.com/TypoCI/spellcheck-action/issues/90)
 
 **Merged pull requests:**
 
+- Adding support for Dutch \(nl\) language [\#115](https://github.com/TypoCI/spellcheck-action/pull/115) ([MikeRogers0](https://github.com/MikeRogers0))
+- Bumping mimemagic to latest [\#114](https://github.com/TypoCI/spellcheck-action/pull/114) ([MikeRogers0](https://github.com/MikeRogers0))
+- Adding cron, cronjob & typoci words [\#113](https://github.com/TypoCI/spellcheck-action/pull/113) ([MikeRogers0](https://github.com/MikeRogers0))
+- build\(docker\): quote command expansion [\#108](https://github.com/TypoCI/spellcheck-action/pull/108) ([Fdawgs](https://github.com/Fdawgs))
 - Updating to Ruby 3.0 [\#106](https://github.com/TypoCI/spellcheck-action/pull/106) ([MikeRogers0](https://github.com/MikeRogers0))
 - Removing Dependabot [\#105](https://github.com/TypoCI/spellcheck-action/pull/105) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bumping dependencies to latest [\#97](https://github.com/TypoCI/spellcheck-action/pull/97) ([MikeRogers0](https://github.com/MikeRogers0))
@@ -19,9 +26,9 @@
 - Updating Changelog Generator to push to master [\#89](https://github.com/TypoCI/spellcheck-action/pull/89) ([MikeRogers0](https://github.com/MikeRogers0))
 - Copy: Be clearer it checks code for spelling mistakes [\#82](https://github.com/TypoCI/spellcheck-action/pull/82) ([MikeRogers0](https://github.com/MikeRogers0))
 
-## [v0.3.0](https://github.com/TypoCI/spellcheck-action/tree/v0.3.0) (2020-12-16)
+## [v0.3.0](https://github.com/TypoCi/spellcheck-action/tree/v0.3.0) (2020-12-16)
 
-[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.2.0...v0.3.0)
+[Full Changelog](https://github.com/TypoCi/spellcheck-action/compare/v0.2.0...v0.3.0)
 
 **Implemented enhancements:**
 
@@ -39,7 +46,7 @@
 - Updating to Ruby 2.7.2 [\#79](https://github.com/TypoCI/spellcheck-action/pull/79) ([MikeRogers0](https://github.com/MikeRogers0))
 - Only tracking major version tag for GitHub Actions [\#78](https://github.com/TypoCI/spellcheck-action/pull/78) ([MikeRogers0](https://github.com/MikeRogers0))
 - Updating Rubocop and its rules [\#77](https://github.com/TypoCI/spellcheck-action/pull/77) ([MikeRogers0](https://github.com/MikeRogers0))
-- fix spelling mistake in readme [\#76](https://github.com/TypoCI/spellcheck-action/pull/76) ([Oxygemo](https://github.com/Oxygemo))
+- fix spelling mistake in readme [\#76](https://github.com/TypoCI/spellcheck-action/pull/76) ([Odyssey346](https://github.com/Odyssey346))
 - Bump zeitwerk from 2.4.1 to 2.4.2 [\#65](https://github.com/TypoCI/spellcheck-action/pull/65) ([dependabot-preview[bot]](https://github.com/apps/dependabot-preview))
 - Bump rspec from 3.9.0 to 3.10.0 [\#54](https://github.com/TypoCI/spellcheck-action/pull/54) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Encourage running on "push" over "pull\_request" [\#53](https://github.com/TypoCI/spellcheck-action/pull/53) ([MikeRogers0](https://github.com/MikeRogers0))
@@ -70,9 +77,9 @@
 - Update actions/cache requirement to v2.1.0 [\#6](https://github.com/TypoCI/spellcheck-action/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Adding Badges to Readme [\#5](https://github.com/TypoCI/spellcheck-action/pull/5) ([MikeRogers0](https://github.com/MikeRogers0))
 
-## [v0.2.0](https://github.com/TypoCI/spellcheck-action/tree/v0.2.0) (2020-08-17)
+## [v0.2.0](https://github.com/TypoCi/spellcheck-action/tree/v0.2.0) (2020-08-17)
 
-[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.1.0...v0.2.0)
+[Full Changelog](https://github.com/TypoCi/spellcheck-action/compare/v0.1.0...v0.2.0)
 
 **Implemented enhancements:**
 
@@ -87,9 +94,9 @@
 
 - feat: Adding auto updating changelog [\#2](https://github.com/TypoCI/spellcheck-action/pull/2) ([MikeRogers0](https://github.com/MikeRogers0))
 
-## [v0.1.0](https://github.com/TypoCI/spellcheck-action/tree/v0.1.0) (2020-08-17)
+## [v0.1.0](https://github.com/TypoCi/spellcheck-action/tree/v0.1.0) (2020-08-17)
 
-[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/0cfaa2ca908b4703af0170f1703344c5e17ee626...v0.1.0)
+[Full Changelog](https://github.com/TypoCi/spellcheck-action/compare/0cfaa2ca908b4703af0170f1703344c5e17ee626...v0.1.0)
 
 
 
