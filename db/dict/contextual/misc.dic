@@ -600,3 +600,6 @@ bzip
 libffi-dev
 parameterise/DBnGS
 parameterize/SGBnDN
+cron
+cronjob
+typoci
