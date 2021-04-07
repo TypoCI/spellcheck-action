@@ -7,10 +7,12 @@
 **Closed issues:**
 
 - should the config file be disabled by default? [\#116](https://github.com/TypoCI/spellcheck-action/issues/116)
+- What's the actual licensing cost? one time 15$ or monthly 30$ [\#112](https://github.com/TypoCI/spellcheck-action/issues/112)
 - Bug: Unable to add annotations for PR from forks [\#36](https://github.com/TypoCI/spellcheck-action/issues/36)
 
 **Merged pull requests:**
 
+- Adding currencies to word list [\#120](https://github.com/TypoCI/spellcheck-action/pull/120) ([MikeRogers0](https://github.com/MikeRogers0))
 - Removing license requirements & switching to MIT [\#119](https://github.com/TypoCI/spellcheck-action/pull/119) ([MikeRogers0](https://github.com/MikeRogers0))
 - Locking github\_changelog\_generator to 1.15.2 [\#118](https://github.com/TypoCI/spellcheck-action/pull/118) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding .github/.typo-ci.yml to default excluded files list [\#117](https://github.com/TypoCI/spellcheck-action/pull/117) ([MikeRogers0](https://github.com/MikeRogers0))
