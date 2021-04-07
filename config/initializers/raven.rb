@@ -9,7 +9,7 @@ end
 
 Raven.user_context(
   github_repository: ENV['GITHUB_REPOSITORY'],
-  input_typo_ci_licence_key: ENV['INPUT_TYPO_CI_LICENSE_KEY']
+  input_typo_ci_license_key: ENV['INPUT_TYPO_CI_LICENSE_KEY']
 )
 Raven.extra_context(
   username: ENV['GITHUB_ACTOR'],

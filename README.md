@@ -10,13 +10,12 @@
 Checks for spelling mistakes within code via a GitHub Action
 </p>
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/MikeRogers0?label=Follow%20%40MikeRogers0%20For%20Updates&style=social)](https://twitter.com/MikeRogers0)
-[![RSpec](https://github.com/TypoCI/spellcheck-action/workflows/RSpec/badge.svg)](https://github.com/TypoCI/spellcheck-action/actions?query=workflow:RSpec)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/cc1820c92e584c289289d52b2e5823cc)](https://www.codacy.com/gh/TypoCI/spellcheck-action?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=TypoCI/spellcheck-action&amp;utm_campaign=Badge_Grade)
+<p align="center">
+<a href="https://twitter.com/MikeRogers0" target="_blank" rel="nooppener"><img src="https://img.shields.io/twitter/follow/MikeRogers0?label=Follow%20%40MikeRogers0%20For%20Updates&style=social" a;t="@MikeRogers0 on Twitter" /></a>
+<a href="https://github.com/TypoCI/spellcheck-action/actions?query=workflow:RSpec" target="_blank" rel="nooppener"><img src="https://github.com/TypoCI/spellcheck-action/workflows/RSpec/badge.svg" alt="RSpec passing" /></a>
+</p>
 
-**Note: If you're using this GitHub Action on a private repository you must [purchase a license](https://gum.co/MvvBE).**
-
-Alternatively you may also want to consider using the [Typo CI GitHub App](https://github.com/marketplace/typo-ci/).
+**👉 If you'd like to use this Action without having to add any files to your repository, consider the [Typo CI GitHub App](https://github.com/marketplace/typo-ci/) 👈**
 
 ## Installation
 
@@ -39,10 +38,6 @@ jobs:
     steps:
     - name: TypoCheck
       uses: typoci/spellcheck-action@master
-      # with:
-        # A license can be purchased via:
-        # https://gumroad.com/l/MvvBE
-        # typo_ci_license_key: ${{ secrets.TYPO_CI_LICENSE_KEY }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -96,12 +91,6 @@ excluded_words:
 # Would you like filenames to also be spellchecked?
 spellcheck_filenames: true
 ```
-
-## The Prosperity Public License 3.0.0
-
-This is free for open source, but if you're using it on a private repo then you are required to purchase a license key.
-
-You can purchase a license via [Gumroad](https://gum.co/MvvBE) for $15 (excluding taxes). It helps support the ongoing development and every purchase is very appreciated.
 
 ## Dictionaries
 
