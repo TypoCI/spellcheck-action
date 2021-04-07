@@ -11,6 +11,7 @@
 
 **Merged pull requests:**
 
+- Removing license requirements & switching to MIT [\#119](https://github.com/TypoCI/spellcheck-action/pull/119) ([MikeRogers0](https://github.com/MikeRogers0))
 - Locking github\_changelog\_generator to 1.15.2 [\#118](https://github.com/TypoCI/spellcheck-action/pull/118) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding .github/.typo-ci.yml to default excluded files list [\#117](https://github.com/TypoCI/spellcheck-action/pull/117) ([MikeRogers0](https://github.com/MikeRogers0))
 
