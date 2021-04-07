@@ -6,11 +6,6 @@ branding:
   icon: 'code'
   color: 'green'
 
-inputs:
-  typo_ci_license_key:
-    description: "If you've supported us by adding a license, it'll let people know you're awesome."
-    required: false
-
 runs:
   using: 'docker'
   # image: 'Dockerfile'

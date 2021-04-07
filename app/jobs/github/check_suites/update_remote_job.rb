@@ -66,7 +66,7 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
   end
 
   def output_summary
-    [output_summary_header, output_summary_license, output_summary_actions, output_summary_body].join("\n\n")
+    [output_summary_header, output_summary_actions, output_summary_body].join("\n\n")
   end
 
   private
@@ -74,13 +74,6 @@ class Github::CheckSuites::UpdateRemoteJob < ApplicationJob
   def output_summary_header
     I18n.t(
       'output_summary_header',
-      scope: ['jobs', self.class.name.underscore]
-    )
-  end
-
-  def output_summary_license
-    I18n.t(
-      "output_summary_license.#{TypoCi::License.valid? ? 'valid' : 'invalid'}",
       scope: ['jobs', self.class.name.underscore]
     )
   end

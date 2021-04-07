@@ -18,11 +18,6 @@ en:
         <h1 align="center">
           Typo CI - Spellcheck Action
         </h1>
-      output_summary_license:
-        valid: |
-          **Thank you for purchasing a license for Typo CI, it helps support the project by enabling me to continue developing it.**
-        invalid: |
-          **If you're using Typo CI with a Private Repository, please [purchase a license key](https://gumroad.com/l/MvvBE) to help support this project**
       output_summary_actions:
           invalid_custom_configuration: |
             **Action Required:** We were unable to parse your `.typo-ci.yml` file. Please review [the Typo CI documentation](%{documentation_url}), run it through a [YAML Validator](https://yamlvalidator.com/) and then try again.
