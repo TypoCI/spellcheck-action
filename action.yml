@@ -1,4 +1,4 @@
-name: 'Typo CI - Spell Check Code Action'
+name: 'A Code Spell Checker Action'
 description: 'Check code for typos & spelling mistakes, then displays suggestions.'
 author: 'Mike Rogers <me@mikerogers.io>'
 
