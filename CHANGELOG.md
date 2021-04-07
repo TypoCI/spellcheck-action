@@ -12,6 +12,7 @@
 
 **Merged pull requests:**
 
+- Ranking Experiment: Starting the Action Name with A [\#121](https://github.com/TypoCI/spellcheck-action/pull/121) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding currencies to word list [\#120](https://github.com/TypoCI/spellcheck-action/pull/120) ([MikeRogers0](https://github.com/MikeRogers0))
 - Removing license requirements & switching to MIT [\#119](https://github.com/TypoCI/spellcheck-action/pull/119) ([MikeRogers0](https://github.com/MikeRogers0))
 - Locking github\_changelog\_generator to 1.15.2 [\#118](https://github.com/TypoCI/spellcheck-action/pull/118) ([MikeRogers0](https://github.com/MikeRogers0))
