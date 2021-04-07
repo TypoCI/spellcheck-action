@@ -87,8 +87,9 @@ excluded_files:
   - "yarn.lock"
   - "Gemfile.lock"
   - ".typo-ci.yml"
+  - ".github/.typo-ci.yml"
 
-# Any typos we should ignore?
+# Any words we should ignore?
 excluded_words:
   - typoci
 
