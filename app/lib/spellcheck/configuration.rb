@@ -7,7 +7,24 @@ class Spellcheck::Configuration
 
   DEFAULT_VALUES = {
     dictionaries: %w[en en_GB],
-    excluded_files: ['vendor/**/*', 'node_modules/**/*', '*.key', '*.enc', '*.min.css', '*.css.map', '*.min.js', '*.js.map', 'package-lock.json', 'yarn.lock', 'Gemfile.lock', '.typo-ci.yml', '*.aff', '*.dic', '*.mk'],
+    excluded_files: [
+      'vendor/**/*',
+      'node_modules/**/*',
+      '*.key',
+      '*.enc',
+      '*.min.css',
+      '*.css.map',
+      '*.min.js',
+      '*.js.map',
+      'package-lock.json',
+      'yarn.lock',
+      'Gemfile.lock',
+      '.typo-ci.yml',
+      '.github/.typo-ci.yml',
+      '*.aff',
+      '*.dic',
+      '*.mk'
+    ],
     excluded_words: ['typoci'],
     spellcheck_filenames: true
   }.freeze
