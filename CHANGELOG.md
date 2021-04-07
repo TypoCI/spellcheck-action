@@ -1,8 +1,22 @@
 # Changelog
 
-## [Unreleased](https://github.com/TypoCi/spellcheck-action/tree/HEAD)
+## [Unreleased](https://github.com/TypoCI/spellcheck-action/tree/HEAD)
 
-[Full Changelog](https://github.com/TypoCi/spellcheck-action/compare/v0.3.0...HEAD)
+[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.4.0...HEAD)
+
+**Closed issues:**
+
+- should the config file be disabled by default? [\#116](https://github.com/TypoCI/spellcheck-action/issues/116)
+- Bug: Unable to add annotations for PR from forks [\#36](https://github.com/TypoCI/spellcheck-action/issues/36)
+
+**Merged pull requests:**
+
+- Locking github\_changelog\_generator to 1.15.2 [\#118](https://github.com/TypoCI/spellcheck-action/pull/118) ([MikeRogers0](https://github.com/MikeRogers0))
+- Adding .github/.typo-ci.yml to default excluded files list [\#117](https://github.com/TypoCI/spellcheck-action/pull/117) ([MikeRogers0](https://github.com/MikeRogers0))
+
+## [v0.4.0](https://github.com/TypoCI/spellcheck-action/tree/v0.4.0) (2021-03-25)
+
+[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.3.0...v0.4.0)
 
 **Closed issues:**
 
@@ -26,9 +40,9 @@
 - Updating Changelog Generator to push to master [\#89](https://github.com/TypoCI/spellcheck-action/pull/89) ([MikeRogers0](https://github.com/MikeRogers0))
 - Copy: Be clearer it checks code for spelling mistakes [\#82](https://github.com/TypoCI/spellcheck-action/pull/82) ([MikeRogers0](https://github.com/MikeRogers0))
 
-## [v0.3.0](https://github.com/TypoCi/spellcheck-action/tree/v0.3.0) (2020-12-16)
+## [v0.3.0](https://github.com/TypoCI/spellcheck-action/tree/v0.3.0) (2020-12-16)
 
-[Full Changelog](https://github.com/TypoCi/spellcheck-action/compare/v0.2.0...v0.3.0)
+[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.2.0...v0.3.0)
 
 **Implemented enhancements:**
 
@@ -77,9 +91,9 @@
 - Update actions/cache requirement to v2.1.0 [\#6](https://github.com/TypoCI/spellcheck-action/pull/6) ([dependabot[bot]](https://github.com/apps/dependabot))
 - Adding Badges to Readme [\#5](https://github.com/TypoCI/spellcheck-action/pull/5) ([MikeRogers0](https://github.com/MikeRogers0))
 
-## [v0.2.0](https://github.com/TypoCi/spellcheck-action/tree/v0.2.0) (2020-08-17)
+## [v0.2.0](https://github.com/TypoCI/spellcheck-action/tree/v0.2.0) (2020-08-17)
 
-[Full Changelog](https://github.com/TypoCi/spellcheck-action/compare/v0.1.0...v0.2.0)
+[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.1.0...v0.2.0)
 
 **Implemented enhancements:**
 
@@ -94,9 +108,9 @@
 
 - feat: Adding auto updating changelog [\#2](https://github.com/TypoCI/spellcheck-action/pull/2) ([MikeRogers0](https://github.com/MikeRogers0))
 
-## [v0.1.0](https://github.com/TypoCi/spellcheck-action/tree/v0.1.0) (2020-08-17)
+## [v0.1.0](https://github.com/TypoCI/spellcheck-action/tree/v0.1.0) (2020-08-17)
 
-[Full Changelog](https://github.com/TypoCi/spellcheck-action/compare/0cfaa2ca908b4703af0170f1703344c5e17ee626...v0.1.0)
+[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/0cfaa2ca908b4703af0170f1703344c5e17ee626...v0.1.0)
 
 
 
