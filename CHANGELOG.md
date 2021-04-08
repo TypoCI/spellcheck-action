@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/TypoCI/spellcheck-action/tree/HEAD)
 
-[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.4.0...HEAD)
+[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v1.0.0...HEAD)
+
+**Merged pull requests:**
+
+- Adding ecommerce & cakephp words [\#122](https://github.com/TypoCI/spellcheck-action/pull/122) ([MikeRogers0](https://github.com/MikeRogers0))
+
+## [v1.0.0](https://github.com/TypoCI/spellcheck-action/tree/v1.0.0) (2021-04-07)
+
+[Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v0.4.0...v1.0.0)
 
 **Closed issues:**
 
