@@ -21,15 +21,21 @@ class Github::CheckSuites::ConfigurationService
   private
 
   def custom_configuration
-    custom_configuration_contents = github_octokit_service.get_file_contents(@github_check_suite.repository_full_name, '.typo-ci.yml', @github_check_suite.head_sha)
+    custom_configuration_contents = (get_typo_ci_file_custom_configuration('.typo-ci.yml') || get_typo_ci_file_custom_configuration('.github/.typo-ci.yml'))
+    return {} unless custom_configuration_contents
+
     @custom_configuration_file = true
     yaml_configuration = YAML.safe_load(custom_configuration_contents)
     @custom_configuration_valid = true
     yaml_configuration
-  rescue Psych::SyntaxError
+  rescue Psych::SyntaxError, Octokit::NotFound
     {}
+  end
+
+  def get_typo_ci_file_custom_configuration(file_name)
+    github_octokit_service.get_file_contents(@github_check_suite.repository_full_name, file_name, @github_check_suite.head_sha)
   rescue Octokit::NotFound
-    {}
+    nil
   end
 
   def committers
