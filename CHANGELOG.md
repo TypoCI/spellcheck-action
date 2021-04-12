@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- Allowing the use of .github/.typo-ci.yml [\#124](https://github.com/TypoCI/spellcheck-action/pull/124) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding ecommerce & cakephp words [\#122](https://github.com/TypoCI/spellcheck-action/pull/122) ([MikeRogers0](https://github.com/MikeRogers0))
 
 ## [v1.0.0](https://github.com/TypoCI/spellcheck-action/tree/v1.0.0) (2021-04-07)
