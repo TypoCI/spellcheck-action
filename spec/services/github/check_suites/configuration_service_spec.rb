@@ -37,6 +37,22 @@ RSpec.describe Github::CheckSuites::ConfigurationService do
       it { expect(subject.to_h[:dictionaries]).to eq(%w[en en_GB]) }
     end
 
+    context 'With file in .github/.typo-ci.yml' do
+      before do
+        allow(github_octokit_service).to receive(:get_file_contents)
+          .with(github_check_suite.repository_full_name, '.typo-ci.yml', github_check_suite.head_sha)
+          .and_raise(Octokit::NotFound)
+
+        allow(github_octokit_service).to receive(:get_file_contents)
+          .with(github_check_suite.repository_full_name, '.github/.typo-ci.yml', github_check_suite.head_sha)
+          .and_return("dictionaries: \n - en_GB")
+      end
+
+      it { expect(subject.to_h[:dictionaries]).to eq(%w[en_GB]) }
+      it { expect { subject }.to change(instance_class, :custom_configuration_file?).from(false).to(true) }
+      it { expect { subject }.to change(instance_class, :custom_configuration_valid?).from(false).to(true) }
+    end
+
     context 'Includes repository author and name in excluded words list' do
       before { allow(github_octokit_service).to receive(:get_file_contents).and_raise(Octokit::NotFound) }
       let(:github_check_suite) { build(:github_check_suite, repository_full_name: 'Samplemin/Weirdname') }
