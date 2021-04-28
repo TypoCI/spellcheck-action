@@ -4,8 +4,13 @@
 
 [Full Changelog](https://github.com/TypoCI/spellcheck-action/compare/v1.0.0...HEAD)
 
+**Closed issues:**
+
+- excluded file won't be excluded [\#123](https://github.com/TypoCI/spellcheck-action/issues/123)
+
 **Merged pull requests:**
 
+- Using CSpell dictionaries over relying on maintaining my own [\#126](https://github.com/TypoCI/spellcheck-action/pull/126) ([MikeRogers0](https://github.com/MikeRogers0))
 - Allowing the use of .github/.typo-ci.yml [\#124](https://github.com/TypoCI/spellcheck-action/pull/124) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding ecommerce & cakephp words [\#122](https://github.com/TypoCI/spellcheck-action/pull/122) ([MikeRogers0](https://github.com/MikeRogers0))
 
