@@ -10,6 +10,7 @@
 
 **Merged pull requests:**
 
+- Removing Sentry Raven [\#127](https://github.com/TypoCI/spellcheck-action/pull/127) ([MikeRogers0](https://github.com/MikeRogers0))
 - Using CSpell dictionaries over relying on maintaining my own [\#126](https://github.com/TypoCI/spellcheck-action/pull/126) ([MikeRogers0](https://github.com/MikeRogers0))
 - Allowing the use of .github/.typo-ci.yml [\#124](https://github.com/TypoCI/spellcheck-action/pull/124) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding ecommerce & cakephp words [\#122](https://github.com/TypoCI/spellcheck-action/pull/122) ([MikeRogers0](https://github.com/MikeRogers0))
@@ -31,6 +32,7 @@
 - Removing license requirements & switching to MIT [\#119](https://github.com/TypoCI/spellcheck-action/pull/119) ([MikeRogers0](https://github.com/MikeRogers0))
 - Locking github\_changelog\_generator to 1.15.2 [\#118](https://github.com/TypoCI/spellcheck-action/pull/118) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding .github/.typo-ci.yml to default excluded files list [\#117](https://github.com/TypoCI/spellcheck-action/pull/117) ([MikeRogers0](https://github.com/MikeRogers0))
+- Adding support for Dutch \(nl\) language [\#115](https://github.com/TypoCI/spellcheck-action/pull/115) ([MikeRogers0](https://github.com/MikeRogers0))
 
 ## [v0.4.0](https://github.com/TypoCI/spellcheck-action/tree/v0.4.0) (2021-03-25)
 
@@ -46,7 +48,6 @@
 
 **Merged pull requests:**
 
-- Adding support for Dutch \(nl\) language [\#115](https://github.com/TypoCI/spellcheck-action/pull/115) ([MikeRogers0](https://github.com/MikeRogers0))
 - Bumping mimemagic to latest [\#114](https://github.com/TypoCI/spellcheck-action/pull/114) ([MikeRogers0](https://github.com/MikeRogers0))
 - Adding cron, cronjob & typoci words [\#113](https://github.com/TypoCI/spellcheck-action/pull/113) ([MikeRogers0](https://github.com/MikeRogers0))
 - build\(docker\): quote command expansion [\#108](https://github.com/TypoCI/spellcheck-action/pull/108) ([Fdawgs](https://github.com/Fdawgs))
