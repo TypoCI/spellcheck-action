@@ -11,7 +11,6 @@ gem 'jwt'
 gem 'mimemagic'
 gem 'octokit'
 gem 'rake'
-gem 'sentry-raven'
 gem 'zeitwerk'
 
 group :development do
