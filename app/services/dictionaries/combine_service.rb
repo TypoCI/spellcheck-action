@@ -8,7 +8,7 @@ class Dictionaries::CombineService
     @words = []
   end
 
-  def run!
+  def call
     build_word_list
     add_words_from_cspell
     write_word_list

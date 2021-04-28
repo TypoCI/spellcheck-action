@@ -39,7 +39,7 @@ RSpec.describe Spellcheck::Word do
         end
       end
 
-      %w[developer].each do |invalid_word|
+      %w[cracking].each do |invalid_word|
         context "Invalid is #{invalid_word}" do
           let(:word) { invalid_word }
           it { is_expected.to eq(false) }
