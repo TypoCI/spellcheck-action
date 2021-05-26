@@ -5,7 +5,7 @@ class Github::Event < ApplicationRecord
   attr_accessor :github_event_path
 
   def initialize(github_event_path:)
-    @github_event_path = github_event_path || ENV["GITHUB_EVENT_PATH"]
+    @github_event_path = github_event_path || ENV['GITHUB_EVENT_PATH']
   end
 
   def head_sha
@@ -24,6 +24,8 @@ class Github::Event < ApplicationRecord
       head_branch: head_branch,
       head_sha: head_sha,
       actor: actor,
+      sender_type: sender_type,
+      repository_private: repository_private,
       pull_request_number: nil
     }
   end
@@ -50,13 +52,21 @@ class Github::Event < ApplicationRecord
     ENV['GITHUB_HEAD_REF']
   end
 
+  def sender_type
+    data.dig(:sender, :type)
+  end
+
+  def repository_private
+    data.dig(:repository, :private)
+  end
+
   private
 
   def data
     @data ||= begin
-                JSON.parse(File.read(github_event_path), symbolize_names: true)
-              rescue Errno::ENOENT
-                {}
-              end
+      JSON.parse(File.read(github_event_path), symbolize_names: true)
+    rescue Errno::ENOENT
+      {}
+    end
   end
 end

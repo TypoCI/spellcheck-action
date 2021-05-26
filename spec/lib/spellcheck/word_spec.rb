@@ -8,7 +8,7 @@ RSpec.describe Spellcheck::Word do
   describe '#valid?' do
     subject { instance_class.valid? }
 
-    %w[valid Word List PickleTime ab a Pickleable APPLE SSLCertificated mingw defp rfc itemprop noscript strtolower accessor tfjsVersion react todo logout tsx async react-router actionmailbox Vitor vue vuejs auth https transactional uncomment].each do |valid_word|
+    %w[valid Word List PickleTime ab a Pickleable APPLE SSLCertificated mingw defp rfc itemprop noscript strtolower accessor tfjsVersion react todo logout tsx async react-router actionmailbox Vitor vue vuejs auth https transactional uncomment gbp eur].each do |valid_word|
       let(:configuration) { Spellcheck::Configuration.new(dictionaries: ['en']) }
       context "Word is #{valid_word}" do
         let(:word) { valid_word }
@@ -39,7 +39,7 @@ RSpec.describe Spellcheck::Word do
         end
       end
 
-      %w[developer].each do |invalid_word|
+      %w[cracking].each do |invalid_word|
         context "Invalid is #{invalid_word}" do
           let(:word) { invalid_word }
           it { is_expected.to eq(false) }

@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe TypoCi::Logger do
-  describe "::info" do
+  describe '::info' do
     subject { described_class.info('sample') }
 
     it { expect { subject }.to_not raise_error }

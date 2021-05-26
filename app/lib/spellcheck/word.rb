@@ -1,6 +1,5 @@
 class Spellcheck::Word
-  attr_reader :word
-  attr_reader :configuration
+  attr_reader :word, :configuration
 
   def initialize(word, configuration: nil)
     @word = word

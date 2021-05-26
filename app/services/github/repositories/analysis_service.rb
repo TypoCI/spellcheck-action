@@ -37,13 +37,7 @@ class Github::Repositories::AnalysisService
   end
 
   def analyses_files!
-    return # Skip threading for now.
-
-    threads = []
-    files.in_groups_of((files.size / 2).to_i, false).each_with_index do |group, index|
-      threads << Thread.new { group.collect(&:invalid_words) }
-    end
-    threads.each(&:join)
+    files.collect(&:invalid_words)
   end
 
   def all_annotations
@@ -61,6 +55,8 @@ class Github::Repositories::AnalysisService
   def configuration_options
     if @repository_path.join('.typo-ci.yml').exist?
       YAML.safe_load(@repository_path.join('.typo-ci.yml').read)
+    elsif @repository_path.join('.github/.typo-ci.yml').exist?
+      YAML.safe_load(@repository_path.join('.github/.typo-ci.yml').read)
     else
       {}
     end

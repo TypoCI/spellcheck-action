@@ -1,0 +1,29 @@
+name: RuboCop
+
+on:
+  push:
+    branches-ignore:
+      - master
+jobs:
+  rubocop:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 3.0
+    - name: Cache gems
+      uses: actions/cache@v2
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-rubocop-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-rubocop-
+    - name: Install gems
+      run: |
+        bundle config path vendor/bundle
+        gem install rubocop
+    - name: Run RuboCop
+      run: rubocop --parallel

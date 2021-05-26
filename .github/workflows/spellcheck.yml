@@ -2,20 +2,17 @@ name: Typo CI
 
 on:
   push:
-    branches:
+    branches-ignore:
       - master
-  pull_request:
 jobs:
   spellcheck:
     name: Typo CI (GitHub Action)
     runs-on: ubuntu-latest
     timeout-minutes: 2
-    if: "!contains(github.event.head_commit.message, '[ci skip]')"
+    if: "!contains(github.event.head_commit.message, '[nodoc]')"
     steps:
       - uses: actions/checkout@v2
       - name: TypoCheck
         uses: ./
-        with:
-          typo_ci_license_key: ${{ secrets.TYPO_CI_LICENSE_KEY }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

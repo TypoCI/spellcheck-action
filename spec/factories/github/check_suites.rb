@@ -26,6 +26,7 @@ FactoryBot.define do
 
     trait :bot_commit do
       actor { 'pull[bot]' }
+      sender_type { 'Bot' }
     end
 
     trait :pull_request do

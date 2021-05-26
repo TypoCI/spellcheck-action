@@ -5,9 +5,7 @@ end
 namespace :typo_ci do
   desc 'Checks for Typos within a GitHub Action'
   task analyse_github_action: :environment do
-    Raven.capture do
-      TypoCi::App.run
-    end
+    TypoCi::App.run
   end
 
   namespace :dictionaries do

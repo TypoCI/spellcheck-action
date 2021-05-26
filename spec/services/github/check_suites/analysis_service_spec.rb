@@ -134,10 +134,10 @@ RSpec.describe Github::CheckSuites::AnalysisService do
             "+---\n" +
             "+layout: post\n" +
             '+ - MathedMan'
-        },
+        }
       ]
     end
 
-    it { is_expected.to eq(['md', 'css']) }
+    it { is_expected.to eq(%w[md css]) }
   end
 end

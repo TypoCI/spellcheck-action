@@ -1,15 +1,10 @@
-name: 'Typo CI - Spellcheck Action'
-description: 'Check for typos & spelling mistakes, then displays suggestions.'
+name: 'A Code Spell Checker Action'
+description: 'Check code for typos & spelling mistakes, then displays suggestions.'
 author: 'Mike Rogers <me@mikerogers.io>'
 
 branding:
   icon: 'code'
   color: 'green'
-
-inputs:
-  typo_ci_license_key:
-    description: "If you've supported us by adding a license, it'll let people know you're awesome."
-    required: false
 
 runs:
   using: 'docker'

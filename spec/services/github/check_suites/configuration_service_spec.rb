@@ -16,7 +16,7 @@ RSpec.describe Github::CheckSuites::ConfigurationService do
     subject { instance_class.configuration }
 
     let(:default_values_with_ignores) do
-      Spellcheck::Configuration::DEFAULT_VALUES.merge({ excluded_words: ["typoci", "Sample", "TestRepo"] })
+      Spellcheck::Configuration::DEFAULT_VALUES.merge({ excluded_words: %w[typoci Sample TestRepo] })
     end
 
     context 'Without .typo-ci.yml file' do
@@ -35,6 +35,22 @@ RSpec.describe Github::CheckSuites::ConfigurationService do
     context 'With incorrectly formatted .typo-ci.yml file' do
       before { allow(github_octokit_service).to receive(:get_file_contents).and_return("dictionaries: 'en_GB'") }
       it { expect(subject.to_h[:dictionaries]).to eq(%w[en en_GB]) }
+    end
+
+    context 'With file in .github/.typo-ci.yml' do
+      before do
+        allow(github_octokit_service).to receive(:get_file_contents)
+          .with(github_check_suite.repository_full_name, '.typo-ci.yml', github_check_suite.head_sha)
+          .and_raise(Octokit::NotFound)
+
+        allow(github_octokit_service).to receive(:get_file_contents)
+          .with(github_check_suite.repository_full_name, '.github/.typo-ci.yml', github_check_suite.head_sha)
+          .and_return("dictionaries: \n - en_GB")
+      end
+
+      it { expect(subject.to_h[:dictionaries]).to eq(%w[en_GB]) }
+      it { expect { subject }.to change(instance_class, :custom_configuration_file?).from(false).to(true) }
+      it { expect { subject }.to change(instance_class, :custom_configuration_valid?).from(false).to(true) }
     end
 
     context 'Includes repository author and name in excluded words list' do

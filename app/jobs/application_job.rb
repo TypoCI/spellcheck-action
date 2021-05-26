@@ -1,7 +1,7 @@
 class ApplicationJob
   def self.perform_now(*args)
-    TypoCi::Logger.info("Calling: #{self.name}")
+    TypoCi::Logger.info("Calling: #{name}")
 
-    self.new.perform(*args)
+    new.perform(*args)
   end
 end

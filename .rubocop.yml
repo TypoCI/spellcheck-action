@@ -1,0 +1,14 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  TargetRubyVersion: 3.0
+  NewCops: disable
+  Exclude:
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+    - '.git/**/*'
+    - 'bin/*'
+    - 'app/lib/spellcheck/content.rb'
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never

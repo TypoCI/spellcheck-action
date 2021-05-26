@@ -8,7 +8,7 @@ class Github::CheckSuites::RequestedJob < ApplicationJob
       load_configuration!
       Github::CheckSuites::AnalysisJob.perform_now(github_check_suite)
     else
-      TypoCi::Logger.info("Skipped, this commit looks automated")
+      TypoCi::Logger.info('Skipped, this commit looks automated')
     end
   end
 

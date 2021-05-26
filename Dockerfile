@@ -1,4 +1,4 @@
-FROM ruby:2.7.1-alpine AS builder
+FROM ruby:3.0.0-alpine AS builder
 
 LABEL com.github.actions.name="Typo CI - Spellcheck Action" \
       com.github.actions.description="Check for typos & spelling mistakes, then displays suggestions." \
@@ -11,7 +11,7 @@ LABEL com.github.actions.name="Typo CI - Spellcheck Action" \
       org.opencontainers.image.description="Check for typos & spelling mistakes, then displays suggestions." \
       maintainer="Mike Rogers <me@mikerogers.io>"
 
-RUN apk --no-cache add build-base git hunspell tzdata libffi-dev yarn
+RUN apk --no-cache add build-base git hunspell tzdata libffi-dev yarn shared-mime-info
 
 FROM builder AS development
 
@@ -31,7 +31,7 @@ ENV APP_ENV production
 COPY .ruby-version /usr/src/app
 COPY Gemfile /usr/src/app
 COPY Gemfile.lock /usr/src/app
-RUN bundle check || bundle install --jobs=$(nproc)
+RUN bundle check || bundle install --jobs="$(nproc)"
 
 # Install Yarn Libraries
 COPY package.json /usr/src/app
