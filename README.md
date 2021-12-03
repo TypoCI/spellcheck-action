@@ -15,8 +15,6 @@ Checks for spelling mistakes within code via a GitHub Action
 <a href="https://github.com/TypoCI/spellcheck-action/actions?query=workflow:RSpec" target="_blank" rel="nooppener"><img src="https://github.com/TypoCI/spellcheck-action/workflows/RSpec/badge.svg" alt="RSpec passing" /></a>
 </p>
 
-**👉 If you'd like to use this Action without having to add any files to your repository, consider the [Typo CI GitHub App](https://github.com/marketplace/typo-ci/) 👈**
-
 ## Installation
 
 Copy add the following to `.github/workflows/spellcheck.yml`:
